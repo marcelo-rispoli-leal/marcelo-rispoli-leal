@@ -1,8 +1,8 @@
 import {
   IoColorWandOutline,
-  IoCodeWorking,
+  IoCodeSlash,
   IoServerOutline,
-  IoLogoAmazon,
+  IoCloudOutline,
   IoDesktopOutline,
   IoConstructOutline,
   IoReceiptOutline,
@@ -12,7 +12,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Linguagens de Programação",
-      icon: IoCodeWorking,
+      icon: IoCodeSlash,
       skills: [
         "Oracle PL/SQL",
         "JavaScript",
@@ -28,7 +28,7 @@ export default function Skills() {
     },
     {
       title: "Cloud & Ferramentas AWS",
-      icon: IoLogoAmazon,
+      icon: IoCloudOutline,
       skills: [
         "Amazon QuickSight",
         "AWS Glue",
@@ -47,8 +47,8 @@ export default function Skills() {
         "Cursor",
         "Trae",
         "Vite",
-        "Git",
         "GitHub",
+        "Excel",
         "Linux",
         "MS-DOS",
         "GIMP",
@@ -84,13 +84,12 @@ export default function Skills() {
         "NFe/CTe/NFSe",
       ],
     },
-    ,
   ];
 
   return (
-    <section className="bg-white py-16 dark:bg-neutral-800">
-      <div className="mx-auto max-w-6xl px-6">
-        <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-neutral-900 dark:text-teal-600">
+    <section className="pt-16">
+      <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+        <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
           <IoColorWandOutline className="mr-3" />
           Competências Técnicas
         </h2>
@@ -99,9 +98,9 @@ export default function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="rounded-lg border-l-4 border-teal-600 bg-neutral-50 p-4 shadow-lg dark:bg-neutral-700"
+              className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700"
             >
-              <h3 className="mb-4 flex items-center text-lg font-bold text-neutral-900 dark:text-neutral-100">
+              <h3 className="mb-4 flex items-center text-lg font-bold text-teal-800 dark:text-teal-200">
                 <category.icon className="mr-2 text-xl" />
                 {category.title}
               </h3>
@@ -110,7 +109,7 @@ export default function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="rounded-full bg-teal-800 px-3 py-1 text-sm font-medium text-white transition-colors hover:bg-teal-600"
+                    className="rounded-full bg-teal-200 px-3 py-1 text-sm font-medium text-teal-900 transition-colors hover:bg-teal-400 dark:bg-teal-800 dark:text-teal-100 dark:hover:bg-teal-600"
                   >
                     {skill}
                   </span>

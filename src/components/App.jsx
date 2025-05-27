@@ -1,16 +1,18 @@
 import NavBar from "./NavBar";
 import Header from "./Header";
-import Experience from "./Experience";
-import Skills from "./Skills";
 import Carousel from "./Carousel";
 import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Certificates from "./Certificates";
+import Highlights from "./Highlights";
 
 export default function App() {
   return (
     <div className="min-h-[100svh] w-full bg-neutral-100 font-sans text-neutral-900 transition-colors dark:bg-neutral-900 dark:text-neutral-100">
       {/* Header fixo */}
-      <header className="fixed top-0 z-50 w-full bg-white/90 shadow-sm backdrop-blur-sm dark:bg-neutral-800/90">
-        <div className="mx-auto max-w-9/10 px-6 py-4 leading-none sm:max-w-85/100 md:max-w-8/10 lg:max-w-3/4 xl:max-w-7/10 2xl:max-w-2/3">
+      <header className="fixed top-0 z-50 w-full bg-neutral-200 py-4 shadow-sm backdrop-blur-sm dark:bg-neutral-800">
+        <div className="mx-auto max-w-96/100 px-6 leading-none sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
           <NavBar />
         </div>
       </header>
@@ -19,14 +21,16 @@ export default function App() {
       <main className="pt-20">
         <Header />
         <Carousel />
+        <Education />
         <Experience />
         <Skills />
-        <Education />
+        <Certificates />
+        <Highlights />
       </main>
 
       {/* Footer */}
-      <footer className="bg-neutral-800 py-8 text-center text-neutral-300 dark:bg-neutral-950">
-        <div className="mx-auto max-w-6xl px-6">
+      <footer className="bg-neutral-200 py-8 text-center text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+        <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
           <p className="text-sm">
             © 2025 Marcelo Rispoli Leal. Todos os direitos reservados.
           </p>

@@ -1,3 +1,5 @@
+import { IoIdCardOutline } from "react-icons/io5";
+
 export default function Experience() {
   const experiences = [
     {
@@ -56,10 +58,10 @@ export default function Experience() {
   ];
 
   return (
-    <section className="bg-neutral-50 py-16 dark:bg-neutral-900">
-      <div className="mx-auto max-w-6xl px-6">
-        <h2 className="mb-12 text-center text-4xl font-bold text-neutral-900 dark:text-neutral-100">
-          <span className="mr-3 text-teal-600">💼</span>
+    <section className="pt-16">
+      <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+        <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
+          <IoIdCardOutline className="mr-3" />
           Experiência Profissional
         </h2>
 
@@ -67,31 +69,31 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="rounded-lg border-l-4 border-teal-600 bg-white p-6 shadow-lg dark:bg-neutral-800"
+              className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700"
             >
               <div className="mb-4 flex flex-col justify-between md:flex-row md:items-start">
                 <div>
-                  <h3 className="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+                  <h3 className="text-xl font-bold text-teal-800 dark:text-teal-200">
                     {exp.title}
                   </h3>
-                  <p className="text-lg font-semibold text-teal-600">
+                  <p className="text-lg font-semibold text-teal-700 dark:text-teal-300">
                     {exp.company}
                   </p>
                 </div>
-                <span className="mt-2 text-sm font-medium text-neutral-600 md:mt-0 dark:text-neutral-400">
+                <span className="mt-2 text-sm font-medium text-neutral-700 md:mt-0 dark:text-neutral-300">
                   {exp.period}
                 </span>
               </div>
 
               {exp.clients && (
-                <div className="mb-4 rounded-md bg-teal-50 p-3 dark:bg-teal-900/20">
+                <div className="mb-4 rounded-md bg-teal-200 p-3 dark:bg-teal-800">
                   <p className="text-sm">
                     <strong className="text-teal-700 dark:text-teal-300">
                       {exp.clients.includes(",")
                         ? "Principais Clientes: "
                         : "Principal Cliente: "}
                     </strong>{" "}
-                    <span className="text-neutral-700 dark:text-neutral-300">
+                    <span className="text-teal-900 dark:text-teal-100">
                       {exp.clients}
                     </span>
                   </p>
@@ -99,9 +101,14 @@ export default function Experience() {
               )}
 
               {exp.highlight && (
-                <div className="mb-4 rounded-md border border-emerald-200 bg-emerald-50 p-4 dark:border-emerald-800 dark:bg-emerald-900/20">
-                  <p className="text-sm text-emerald-800 dark:text-emerald-200">
-                    {exp.highlight}
+                <div className="mb-4 rounded-md border border-teal-700 bg-emerald-200 p-4 dark:border-teal-300 dark:bg-emerald-800">
+                  <p className="text-sm">
+                    <strong className="text-emerald-700 dark:text-emerald-300">
+                      {exp.highlight.split(":")[0]}:
+                    </strong>{" "}
+                    <span className="text-emerald-900 dark:text-emerald-100">
+                      {exp.highlight.split(":")[1]}
+                    </span>
                   </p>
                 </div>
               )}
@@ -109,8 +116,8 @@ export default function Experience() {
               <ul className="space-y-2">
                 {exp.activities.map((activity, actIndex) => (
                   <li key={actIndex} className="flex items-start">
-                    <span className="mt-1 mr-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-600"></span>
-                    <span className="text-neutral-700 dark:text-neutral-300">
+                    <span className="mt-1 mr-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-700 dark:bg-teal-300"></span>
+                    <span className="text-teal-950 dark:text-teal-50">
                       {activity}
                     </span>
                   </li>

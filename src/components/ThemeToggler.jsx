@@ -17,7 +17,7 @@ export default function ThemeToggler() {
       {isDarkTheme ? (
         <IoSunnyOutline className="h-full w-full" />
       ) : (
-        <IoMoonOutline className="h-full w-full" />
+        <IoMoonOutline className="h-full w-full rotate-[18deg]" />
       )}
     </button>
   );
