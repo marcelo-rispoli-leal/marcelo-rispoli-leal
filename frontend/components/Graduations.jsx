@@ -1,5 +1,5 @@
 import { IoSchoolOutline } from "react-icons/io5";
-export default function Education() {
+export default function Graduations() {
   const education = [
     {
       title: "Bacharel em Ciências Contábeis",

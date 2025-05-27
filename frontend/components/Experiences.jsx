@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { IoIdCardOutline } from "react-icons/io5";
 
-// Sub-component for rendering each experience item
-function ExperienceItem({ experience }) {
+// Sub-component for rendering each experience
+function Experience({ experience }) {
   // Destructure with default values to prevent errors if fields are missing
   const {
     title = "N/A",
@@ -69,7 +69,7 @@ function ExperienceItem({ experience }) {
   );
 }
 
-export default function Experience() {
+export default function Experiences() {
   const [experiences, setExperiences] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -152,7 +152,7 @@ export default function Experience() {
         <div className="space-y-8">
           {experiences.map((exp) => (
             // Use MongoDB's _id as the key for better performance and stability
-            <ExperienceItem key={exp._id || exp.title} experience={exp} />
+            <Experience key={exp._id || exp.title} experience={exp} />
           ))}
         </div>
       </div>

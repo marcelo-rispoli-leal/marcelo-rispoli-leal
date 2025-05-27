@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Carousel from "./Carousel";
-import Education from "./Education";
-import Experience from "./Experience";
+import Graduations from "./Graduations";
+import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Highlights from "./Highlights";
@@ -22,8 +22,8 @@ export default function App() {
       <main className="pt-20">
         <Header />
         <Carousel />
-        <Education />
-        <Experience />
+        <Graduations />
+        <Experiences />
         <Skills />
         <Certificates />
         <Highlights />
