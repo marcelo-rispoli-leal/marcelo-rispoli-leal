@@ -75,7 +75,6 @@ export default function Experiences() {
   const [error, setError] = useState(null);
 
   // Vite exposes env variables on import.meta.env
-  // VITE_API_BASE_URL should be defined in your .env.local file (e.g., VITE_API_BASE_URL=http://localhost:3001)
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
@@ -151,7 +150,6 @@ export default function Experiences() {
 
         <div className="space-y-8">
           {experiences.map((exp) => (
-            // Use MongoDB's _id as the key for better performance and stability
             <Experience key={exp._id || exp.title} experience={exp} />
           ))}
         </div>
