@@ -10,7 +10,7 @@ export default function Certificates() {
       details: "IGTI • 2020 • 148h • Pontuação: 500/500",
     },
     {
-      title: "Scrum Foundation Professional Certificate",
+      title: "Scrum Foundation",
       details: "CertiProf • 2020",
     },
     {
@@ -26,7 +26,7 @@ export default function Certificates() {
       details: "Escola Virtual Bradesco • 2020 • 44h",
     },
     {
-      title: "Administrando Banco de Dados",
+      title: "Administração de Banco de Dados",
       details: "Escola Virtual Bradesco • 2020 • 15h",
     },
     {
@@ -34,7 +34,7 @@ export default function Certificates() {
       details: "Escola Virtual Bradesco • 2020 • 12h",
     },
     {
-      title: "Certificação Synchro NFSe",
+      title: "Synchro NFSe",
       details: "Synchro Sistemas • 2017 • 8h",
     },
     {
@@ -52,7 +52,7 @@ export default function Certificates() {
       <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
         <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
           <IoTrophyOutline className="mr-3" />
-          Certificações
+          Certificados
         </h2>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
