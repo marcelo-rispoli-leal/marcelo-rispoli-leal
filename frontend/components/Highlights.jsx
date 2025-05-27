@@ -1,15 +1,26 @@
 import {
   IoStarOutline,
+  IoBusinessOutline,
+  IoSync,
   IoLogoAmazon,
   IoLibraryOutline,
-  IoSync,
-  IoBusinessOutline,
   IoStorefrontOutline,
   IoLanguage,
 } from "react-icons/io5";
 
 export default function Highlights() {
   const highlights = [
+    {
+      title: "Grandes Corporações",
+      icon: IoBusinessOutline,
+      description: "Histórico de projetos bem-sucedidos em grandes empresas",
+    },
+    {
+      title: "Integração de Sistemas",
+      icon: IoSync,
+      description:
+        "Experiência consolidada em integração entre ERPs e sistemas fiscais",
+    },
     {
       title: "Amazon AWS",
       icon: IoLogoAmazon,
@@ -21,17 +32,6 @@ export default function Highlights() {
       icon: IoLibraryOutline,
       description:
         "Conhecimento profundo da legislação tributária brasileira e sistemas de compliance",
-    },
-    {
-      title: "Integração de Sistemas",
-      icon: IoSync,
-      description:
-        "Experiência consolidada em integração entre ERPs e sistemas fiscais",
-    },
-    {
-      title: "Grandes Corporações",
-      icon: IoBusinessOutline,
-      description: "Histórico de projetos bem-sucedidos em grandes empresas",
     },
     {
       title: "Trabalho Remoto",
