@@ -145,7 +145,7 @@ export default function Experiences() {
       <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
         <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
           <IoIdCardOutline className="mr-3" />
-          Professional Experience
+          Experiência Profissional
         </h2>
 
         <div className="space-y-8">

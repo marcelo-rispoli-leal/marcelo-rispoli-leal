@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   IoColorWandOutline,
   IoCodeSlash,
@@ -8,83 +9,82 @@ import {
   IoReceiptOutline,
 } from "react-icons/io5";
 
+// Mapping icon names to icon components
+const iconMap = {
+  IoCodeSlash,
+  IoServerOutline,
+  IoCloudOutline,
+  IoDesktopOutline,
+  IoConstructOutline,
+  IoReceiptOutline,
+};
+
 export default function Skills() {
-  const skillCategories = [
-    {
-      title: "Linguagens de Programação",
-      icon: IoCodeSlash,
-      skills: [
-        "Oracle PL/SQL",
-        "JavaScript",
-        "Node.js",
-        "React.js",
-        "Express.js",
-        "HTML/CSS",
-        "ASP.NET",
-        "C#",
-        "Java",
-        "T-SQL",
-      ],
-    },
-    {
-      title: "Cloud & Ferramentas AWS",
-      icon: IoCloudOutline,
-      skills: [
-        "Amazon QuickSight",
-        "AWS Glue",
-        "Amazon Redshift",
-        "Amazon Athena",
-        "Amazon S3",
-        "AWS StepFunctions",
-      ],
-    },
-    {
-      title: "Ferramentas de Desenvolvimento",
-      icon: IoConstructOutline,
-      skills: [
-        "Tailwind",
-        "VS Code",
-        "Cursor",
-        "Trae",
-        "Vite",
-        "GitHub",
-        "Excel",
-        "Linux",
-        "MS-DOS",
-        "GIMP",
-        "Visual Studio",
-      ],
-    },
-    {
-      title: "Bancos de Dados",
-      icon: IoServerOutline,
-      skills: [
-        "Oracle",
-        "SQL Server",
-        "PostgreSQL",
-        "MongoDB",
-        "Access",
-        "MySQL",
-      ],
-    },
-    {
-      title: "Sistemas Fiscais e ERP",
-      icon: IoDesktopOutline,
-      skills: ["Oracle EBS", "SAP R/3", "Tasy", "Synchro Soluções Fiscais"],
-    },
-    {
-      title: "Declarações Fiscais",
-      icon: IoReceiptOutline,
-      skills: [
-        "EFD Contribuições",
-        "EFD ICMS/IPI",
-        "ECD",
-        "ECF",
-        "EFD REINF",
-        "NFe/CTe/NFSe",
-      ],
-    },
-  ];
+  const [skillCategories, setSkillCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
+  useEffect(() => {
+    async function fetchSkills() {
+      if (!apiBaseUrl) {
+        setError(
+          "API base URL not set. Please define VITE_API_BASE_URL in your .env.local.",
+        );
+        setLoading(false);
+        return;
+      }
+      try {
+        const response = await fetch(`${apiBaseUrl}/api/skills`);
+        if (!response.ok) {
+          throw new Error(`HTTP Error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setSkillCategories(data);
+      } catch (e) {
+        setError(e.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchSkills();
+  }, [apiBaseUrl]);
+
+  if (loading) {
+    return (
+      <section className="pt-16">
+        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+          <p className="text-xl text-neutral-700 dark:text-neutral-300">
+            Loading technical skills...
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="pt-16">
+        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+          <p className="text-xl text-red-600 dark:text-red-400">
+            Error loading skills: {error}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
+  if (skillCategories.length === 0) {
+    return (
+      <section className="pt-16">
+        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+          <p className="text-xl text-neutral-700 dark:text-neutral-300">
+            No technical competence found.
+          </p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="pt-16">
@@ -95,28 +95,34 @@ export default function Skills() {
         </h2>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700"
-            >
-              <h3 className="mb-4 flex items-center text-lg font-bold text-teal-800 dark:text-teal-200">
-                <category.icon className="mr-2 text-xl" />
-                {category.title}
-              </h3>
+          {skillCategories.map((category, index) => {
+            // Get map icon component using icon name
+            const IconComponent =
+              iconMap[category.iconName] || IoColorWandOutline;
 
-              <div className="flex flex-wrap justify-center gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className="rounded-full bg-teal-200 px-3 py-1 text-sm font-medium text-teal-900 transition-colors hover:bg-teal-400 dark:bg-teal-800 dark:text-teal-100 dark:hover:bg-teal-600"
-                  >
-                    {skill}
-                  </span>
-                ))}
+            return (
+              <div
+                key={category._id || index}
+                className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700"
+              >
+                <h3 className="mb-4 flex items-center text-lg font-bold text-teal-800 dark:text-teal-200">
+                  <IconComponent className="mr-2 text-xl" />
+                  {category.title}
+                </h3>
+
+                <div className="flex flex-wrap justify-center gap-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="rounded-full bg-teal-200 px-3 py-1 text-sm font-medium text-teal-900 transition-colors hover:bg-teal-400 dark:bg-teal-800 dark:text-teal-100 dark:hover:bg-teal-600"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
