@@ -1,17 +1,29 @@
 // backend/routes.js
 async function routes(fastify, options) {
-  const experiencesCollection = options.experiencesCollection;
+  const mongoClient = options.mongoClient;
+  const DB_NAME = options.DB_NAME;
 
-  if (!experiencesCollection) {
-    fastify.log.error("Experiences collection is not available in routes.");
-    // Optionally, you could throw an error here to prevent the server from starting
-    // if the collection is critical for all routes in this file.
-    // throw new Error("Experiences collection is not initialized");
-    return; // Or handle it gracefully depending on your needs
+  if (!mongoClient) {
+    fastify.log.error("MongoDB client is not available in routes.");
+    return;
   }
 
   fastify.get("/api/experiences", async (request, reply) => {
     try {
+      // Obter a coleção diretamente do cliente MongoDB
+      const db = mongoClient.db(DB_NAME);
+      const experiencesCollection = db.collection("experiences");
+
+      // Listar todas as coleções disponíveis no banco de dados
+      const collections = await db.listCollections().toArray();
+      fastify.log.info(
+        `Available collections: ${collections.map((c) => c.name).join(", ")}`,
+      );
+
+      // Verificar contagem de documentos
+      const count = await experiencesCollection.countDocuments({});
+      fastify.log.info(`Found ${count} documents in experiences collection.`);
+
       const experiences = await experiencesCollection.find({}).toArray();
       reply.send(experiences);
     } catch (error) {
@@ -19,9 +31,6 @@ async function routes(fastify, options) {
       reply.status(500).send({ message: "Error fetching data from server" });
     }
   });
-
-  // You can add more routes here, for example:
-  // fastify.get('/api/another-route', async (request, reply) => { ... });
 }
 
 export default routes;

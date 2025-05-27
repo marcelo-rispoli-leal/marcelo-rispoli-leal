@@ -48,14 +48,8 @@ async function connectMongo() {
 
 // Register application routes and pass the collection
 async function registerAppRoutes() {
-  if (experiencesCollection) {
-    fastify.register(appRoutes, { experiencesCollection });
-  } else {
-    fastify.log.error(
-      "Cannot register routes, experiencesCollection is not initialized.",
-    );
-    process.exit(1);
-  }
+  // Passar o cliente MongoDB e o nome do banco em vez da coleção
+  fastify.register(appRoutes, { mongoClient, DB_NAME });
 }
 
 // Starts the server
@@ -63,7 +57,7 @@ const start = async () => {
   try {
     await connectMongo(); // Connect to MongoDB before starting the HTTP server
     await registerAppRoutes(); // Register routes after DB connection and collection initialization
-    fastify.listen({ port: DB_PORT, host: DB_IP });
+    await fastify.listen({ port: DB_PORT, host: DB_IP });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
