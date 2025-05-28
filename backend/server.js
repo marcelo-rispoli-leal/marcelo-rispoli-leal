@@ -34,7 +34,7 @@ const start = async () => {
     fastify.register(routes);
 
     // Start the server
-    await fastify.listen({ port: DB_PORT, host: DB_IP });
+    fastify.listen({ port: DB_PORT, host: DB_IP });
     fastify.log.info(`Server running on ${DB_IP}:${DB_PORT}`);
   } catch (err) {
     fastify.log.error(err);
