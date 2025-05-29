@@ -1,13 +1,20 @@
-// ThemeProvider dependencies
 import { ThemeContext } from "../hooks/useThemeContext.js";
 import { useThemeProvider } from "../hooks/useThemeProvider.js";
-// Exports the ThemeProvider for import into the page index component
+import { useLanguageProvider } from "../hooks/useLanguageProvider.js";
+
 export function ThemeProvider({ children }) {
-  // Retrieves isDarkTheme state and toggleTheme function to pass to the App
   const { isDarkTheme, toggleTheme } = useThemeProvider();
-  // Returns the ThemeProvider component
+  const { language, changeLanguage } = useLanguageProvider();
+
   return (
-    <ThemeContext.Provider value={{ isDarkTheme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{
+        isDarkTheme,
+        toggleTheme,
+        language,
+        changeLanguage,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );
