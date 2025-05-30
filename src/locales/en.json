@@ -8,13 +8,13 @@
       "title": "Academic Background",
       "content": [
         {
-          "title": "Bachelor of Accounting Sciences",
+          "title": "Bachelor's Degree in Accounting Sciences",
           "institution": "Federal University of Rio Grande do Sul (UFRGS)",
           "period": "1997 - 2001"
         },
         {
-          "title": "High School and Elementary Education",
-          "institution": "Anchieta College - Porto Alegre",
+          "title": "Elementary and High School",
+          "institution": "Colégio Anchieta - Porto Alegre/RS",
           "period": "1986 - 1996"
         }
       ]
@@ -23,54 +23,62 @@
       "title": "Professional Experience",
       "content": [
         {
-          "title": "Technical and Functional Synchro Consultant",
-          "company": "Ninecon Consulting Associates",
+          "title": "Synchro Technical-Functional Consultant",
+          "company": "Ninecon Consultores Associados",
           "period": "Feb/2022 - Mar/2025",
-          "clients": "Amazon, Dufry, Azul, Exterran and FGV",
-          "highlight": "Highlight Project - Amazon: Held a key role in the tax credit recovery initiative for assets, developing complex workflows integrating Synchro, Oracle EBS and AWS tools (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "clients": {
+            "label": "Main Customers",
+            "content": "Amazon, Dufry, Azul Airlines, Exterran, FGV"
+          },
+          "highlight": "Key technical participation in tax credit recovery project on assets, developing complex workflows for integration between Synchro, Oracle EBS and AWS ecosystem (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
           "activities": [
-            "Development of data integration workflows between Oracle EBS, Synchro and S3 through Redshift and Athena",
-            "Creation of analytical dashboards in QuickSight for tax and accounting data visualization",
-            "Customization of Synchro Open Interfaces for process automation",
-            "Validation of tax assessment and declaration",
-            "Advanced technical support for Synchro in large corporate accounts"
+            "Built integration flows between Oracle EBS, Synchro and S3 using Redshift and Athena",
+            "Implemented QuickSight dashboards for tax and accounting monitoring",
+            "Customized Synchro Open Interfaces for tax process automation",
+            "Technical validation of tax calculation and declaration processes",
+            "Specialized Synchro technical support for large corporations"
           ]
         },
         {
           "title": "Tasy EMR Developer",
-          "company": "Meta IT Services",
+          "company": "Meta Serviços em Informática",
           "period": "Jan/2021 - Jan/2022",
-          "clients": "Philips Healthcare",
+          "clients": {
+            "label": "Main Customer",
+            "content": "Philips Healthcare"
+          },
           "activities": [
-            "Development of reports and features in the Tasy EMR system",
-            "Programming in Oracle PL/SQL, JavaScript and Java",
-            "Analysis and optimization of query performance"
+            "Development of custom reports and functionalities in Tasy EMR system",
+            "Advanced programming in Oracle PL/SQL, JavaScript and Java",
+            "Performance optimization in SQL queries and stored procedures"
           ]
         },
         {
-          "title": "Technical and Functional Synchro Consultant",
-          "company": "Gesif Consultants (Abreu & Damé)",
+          "title": "Synchro Technical-Functional Consultant",
+          "company": "Gesif Consultores (Abreu & Damé)",
           "period": "Jun/2008 - Aug/2013 | Jan/2015 - Jan/2020",
-          "clients": "Tramontina, Benoit Stores, Paquetá Footwear, Procergs, TAP, Dana Albarus, Bettanin, Dell",
+          "clients": {
+            "label": "Main Customers",
+            "content": "Tramontina, Lojas Benoit, Paquetá Calçados, Procergs, TAP, Dana Albarus, Bettanin, Dell"
+          },
           "activities": [
             "Implementation, maintenance and customization of Synchro tax solutions",
-            "Advanced Oracle PL/SQL development (packages, procedures, functions, triggers, indexes, external tables)",
-            "Support for SAP, Oracle EBS integrations and Synchro Open Interfaces",
-            "Calculation and assessment of ICMS, IPI, PIS, COFINS, IR, CSLL, INSS and ISS taxes",
-            "Generation and validation of accounting and tax obligations (EFD ICMS/IPI, EFD Social Contribution Taxes, ECD, ECF, REINF and State GIAs)",
-            "Preparation of manuals, spreadsheets and activity documentation",
-            "Technical and functional training for teams"
+            "Advanced Oracle PL/SQL development (packages, procedures, functions, triggers)",
+            "Configuration and operation of Synchro modules for integration with SAP and Oracle EBS and for Open Interfaces",
+            "Automation of federal and state tax calculation and assessment (ICMS, IPI, PIS, COFINS, IR, CSLL, INSS, ISS)",
+            "Generation and validation of digital tax obligations (EFD ICMS/IPI, EFD Contributions (PIS/COFINS), ECD, ECF, REINF, GIAs)",
+            "Technical documentation and functional manual development",
+            "Technical team training and end-user enablement"
           ]
         },
         {
           "title": "Tax Accounting Analyst",
-          "company": "Vonpar Soft Drinks S/A (Coca-Cola)",
+          "company": "Vonpar Refrescos S/A (Coca-Cola)",
           "period": "Nov/2000 - Dec/2003",
           "activities": [
-            "Assessment of federal and state taxes (IPI, ICMS, PIS/COFINS)",
-            "Operation of SAP R/3 system for tax processes",
-            "Tax compliance operations control across multiple units",
-            "Issuance and control of tax documents"
+            "Federal and state tax assessment for subsidiaries (IPI, ICMS, PIS/COFINS)",
+            "Operation of SAP R/3 system modules related to controlling and tax processes",
+            "Tax invoice issuance"
           ]
         }
       ]
@@ -82,21 +90,18 @@
           "title": "Programming Languages",
           "iconName": "IoCodeSlash",
           "skills": [
-            "Oracle PL/SQL",
+            "Oracle PL/SQL (Advanced)",
+            "HTML5/CSS3",
             "JavaScript",
             "Node.js",
-            "React.js",
-            "Express.js",
-            "HTML/CSS",
-            "ASP.NET",
-            "C#",
             "Java",
+            "ASP.NET/C#",
             "T-SQL"
           ]
         },
         {
-          "title": "Cloud & AWS Tools",
-          "iconName": "IoCloudOutline",
+          "title": "AWS Resources",
+          "iconName": "IoLogoAmazon",
           "skills": [
             "Amazon QuickSight",
             "AWS Glue",
@@ -107,36 +112,24 @@
           ]
         },
         {
-          "title": "Development Tools",
+          "title": "Tools & Frameworks",
           "iconName": "IoConstructOutline",
           "skills": [
-            "Tailwind",
             "VS Code",
-            "Cursor",
-            "Trae",
-            "Vite",
-            "GitHub",
-            "Excel",
-            "Linux",
-            "MS-DOS",
-            "GIMP",
+            "React.js",
+            "Tailwind CSS",
+            "Git/GitHub",
+            "Excel (Advanced)",
             "Visual Studio"
           ]
         },
         {
           "title": "Databases",
           "iconName": "IoServerOutline",
-          "skills": [
-            "Oracle",
-            "SQL Server",
-            "PostgreSQL",
-            "MongoDB",
-            "Access",
-            "MySQL"
-          ]
+          "skills": ["Oracle Database", "SQL Server", "PostgreSQL", "MongoDB"]
         },
         {
-          "title": "Tax and ERP Systems",
+          "title": "Enterprise Systems",
           "iconName": "IoDesktopOutline",
           "skills": [
             "Oracle EBS",
@@ -146,13 +139,12 @@
           ]
         },
         {
-          "title": "Tax Declarations",
+          "title": "Tax Compliance",
           "iconName": "IoReceiptOutline",
           "skills": [
             "EFD Contributions",
             "EFD ICMS/IPI",
-            "ECD",
-            "ECF",
+            "ECD/ECF",
             "EFD REINF",
             "NFe/CTe/NFSe"
           ]
@@ -160,7 +152,7 @@
       ]
     },
     "titles": {
-      "title": "Certificates",
+      "title": "Certifications",
       "content": [
         {
           "title": "Full Stack Journey",
@@ -168,78 +160,58 @@
         },
         {
           "title": "Full Stack Developer",
-          "details": "IGTI • 2020 • 148h • Score: 500/500"
+          "details": "IGTI • 2020 • 148h • Perfect Score (500/500)"
         },
         {
-          "title": "Scrum Foundation",
+          "title": "Scrum Foundation Professional Certificate",
           "details": "CertiProf • 2020"
         },
         {
-          "title": "LinkedIn Skill Assessments",
+          "title": "LinkedIn Skill Badges",
           "details": "Excel, CSS, JSON, JavaScript, MongoDB"
         },
         {
-          "title": "Systems Development",
-          "details": "Bradesco Virtual School • 2020 • 45h"
+          "title": "Synchro Technical Certification",
+          "details": "Synchro Sistemas • 2010 • 40h"
         },
         {
-          "title": "IT Governance",
-          "details": "Bradesco Virtual School • 2020 • 44h"
-        },
-        {
-          "title": "Database Administration",
-          "details": "Bradesco Virtual School • 2020 • 15h"
-        },
-        {
-          "title": "Data Modeling",
-          "details": "Bradesco Virtual School • 2020 • 12h"
-        },
-        {
-          "title": "Synchro NFSe",
-          "details": "Synchro Systems • 2017 • 8h"
-        },
-        {
-          "title": "Synchro Technical Training",
-          "details": "Synchro Systems • 2010 • 40h"
-        },
-        {
-          "title": "Synchro Functional Training",
-          "details": "Synchro Systems • 2008 • 88h"
+          "title": "Synchro Functional Certification",
+          "details": "Synchro Sistemas • 2008 • 88h"
         }
       ]
     },
     "highlights": {
-      "title": "Key Differentiators",
+      "title": "Key Differentials",
       "content": [
         {
-          "title": "Large Corporations",
+          "title": "Corporate Portfolio",
           "icon": "IoBusinessOutline",
-          "description": "History of successful projects in large companies"
+          "description": "Proven experience in complex projects for large enterprises"
         },
         {
           "title": "Systems Integration",
           "icon": "IoSync",
-          "description": "Consolidated experience in integration between ERPs and tax systems"
+          "description": "Specialist in connectivity between ERPs and tax platforms"
         },
         {
-          "title": "Amazon AWS",
-          "icon": "IoLogoAmazon",
-          "description": "Practical experience in handling cloud tools and large data volumes"
+          "title": "Cloud Computing",
+          "icon": "IoCloudOutline",
+          "description": "Hands-on experience with AWS data pipelines and analytics"
         },
         {
           "title": "Tax Expertise",
           "icon": "IoLibraryOutline",
-          "description": "Deep knowledge of Brazilian tax legislation and compliance systems"
+          "description": "In-depth knowledge of tax legislation and fiscal compliance"
         },
         {
-          "title": "Remote Work",
+          "title": "Distributed Collaboration",
           "icon": "IoStorefrontOutline",
-          "description": "Adapted and experienced in remote work with distributed teams"
+          "description": "Experienced and adapted to remote work with multidisciplinary teams"
         },
         {
           "title": "English",
           "icon": "IoLanguage",
-          "description": "Technical English knowledge for programming, documentation and communication"
+          "description": "Knowledge for technical documentation, coding and communication"
         }
       ]
     },

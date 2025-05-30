@@ -2,7 +2,7 @@ import {
   IoColorWandOutline,
   IoCodeSlash,
   IoServerOutline,
-  IoCloudOutline,
+  IoLogoAmazon,
   IoDesktopOutline,
   IoConstructOutline,
   IoReceiptOutline,
@@ -12,7 +12,7 @@ import {
 const iconMap = {
   IoCodeSlash,
   IoServerOutline,
-  IoCloudOutline,
+  IoLogoAmazon,
   IoDesktopOutline,
   IoConstructOutline,
   IoReceiptOutline,

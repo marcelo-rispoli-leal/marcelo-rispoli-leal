@@ -2,7 +2,7 @@
   "lang": "es",
   "collections": {
     "header": {
-      "legend": "Especialista en Sistemas Tributarios e Integración de Datos Corporativos"
+      "legend": "Especialista en Sistemas Fiscales e Integración de Datos Corporativos"
     },
     "schools": {
       "title": "Formación Académica",
@@ -10,11 +10,11 @@
         {
           "title": "Licenciatura en Ciencias Contables",
           "institution": "Universidad Federal de Rio Grande do Sul (UFRGS)",
-          "period": "1997-2001"
+          "period": "1997 - 2001"
         },
         {
-          "title": "Educación Secundaria y Primaria",
-          "institution": "Colegio Anchieta - Porto Alegre",
+          "title": "Educación Primaria y Secundaria",
+          "institution": "Colégio Anchieta - Porto Alegre/RS",
           "period": "1986 - 1996"
         }
       ]
@@ -23,43 +23,52 @@
       "title": "Experiencia Profesional",
       "content": [
         {
-          "title": "Consultor Técnico y Funcional Synchro",
-          "company": "Ninecon Consultores Asociados",
+          "title": "Consultor Técnico-Funcional Synchro",
+          "company": "Ninecon Consultores Associados",
           "period": "Feb/2022 - Mar/2025",
-          "clients": "Amazon, Dufry, Azul, Exterran y FGV",
-          "highlight": "Proyecto Destacado - Amazon: Desempeñó un papel clave en el proyecto de recuperación de créditos fiscales sobre activos, desarrollando flujos de trabajo complejos integrando Synchro, Oracle EBS y herramientas AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "clients": {
+            "label": "Principales Clientes",
+            "content": "Amazon, Dufry, Azul Líneas Aéreas, Exterran, FGV"
+          },
+          "highlight": "Participación técnica clave en proyecto de recuperación de créditos fiscales sobre activos, desarrollando workflows complejos para integración entre Synchro, Oracle EBS y ecosistema AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
           "activities": [
-            "Desarrollo de flujos de trabajo de integración de datos entre Oracle EBS, Synchro y S3 a través de Redshift y Athena",
-            "Creación de paneles analíticos en QuickSight para visualización de datos fiscales y contables",
-            "Personalización de Open Interfaces Synchro para automatización de procesos",
-            "Validación de la liquidación y declaración de impuestos",
-            "Soporte técnico avanzado para Synchro en grandes cuentas corporativas"
+            "Construcción de flujos de integración entre Oracle EBS, Synchro y S3 utilizando Redshift y Athena",
+            "Implementación de dashboards en QuickSight para monitoreo fiscal y contable",
+            "Personalización de Open Interfaces Synchro para automatización de procesos fiscales",
+            "Validación técnica de liquidación y declaración de impuestos",
+            "Soporte técnico especializado Synchro para grandes corporaciones"
           ]
         },
         {
           "title": "Desarrollador Tasy EMR",
-          "company": "Meta Servicios en Informática",
+          "company": "Meta Serviços em Informática",
           "period": "Ene/2021 - Ene/2022",
-          "clients": "Philips Healthcare",
+          "clients": {
+            "label": "Principal Cliente",
+            "content": "Philips Healthcare"
+          },
           "activities": [
-            "Desarrollo de informes y funcionalidades en el sistema Tasy EMR",
-            "Programación en Oracle PL/SQL, JavaScript y Java",
-            "Análisis y optimización del rendimiento de consultas"
+            "Desarrollo de reportes personalizados y funcionalidades en el sistema Tasy EMR",
+            "Programación avanzada en Oracle PL/SQL, JavaScript y Java",
+            "Optimización de rendimiento en consultas SQL y procedimientos almacenados"
           ]
         },
         {
-          "title": "Consultor Técnico y Funcional Synchro",
+          "title": "Consultor Técnico-Funcional Synchro",
           "company": "Gesif Consultores (Abreu & Damé)",
           "period": "Jun/2008 - Ago/2013 | Ene/2015 - Ene/2020",
-          "clients": "Tramontina, Lojas Benoit, Paquetá Calçados, Procergs, TAP, Dana Albarus, Bettanin, Dell",
+          "clients": {
+            "label": "Principales Clientes",
+            "content": "Tramontina, Lojas Benoit, Paquetá Calçados, Procergs, TAP, Dana Albarus, Bettanin, Dell"
+          },
           "activities": [
             "Implementación, mantenimiento y personalización de soluciones fiscales Synchro",
-            "Desarrollo avanzado en Oracle PL/SQL (packages, procedures, functions, triggers, indexes, external tables)",
-            "Atención a integraciones SAP, Oracle EBS y Open Interfaces Synchro",
-            "Cálculo y liquidación de impuestos ICMS, IPI, PIS, COFINS, IR, CSLL, INSS e ISS",
-            "Generación y validación de obligaciones contables y fiscales (EFD ICMS/IPI, EFD Contribuciones, ECD, ECF, REINF y GIAs Estatales)",
-            "Elaboración de manuales, planillas y documentación de actividades",
-            "Capacitación técnica y funcional de equipos"
+            "Desarrollo avanzado en Oracle PL/SQL (packages, procedures, functions, triggers)",
+            "Configuración y operación de módulos Synchro para integración com SAP y Oracle EBS e para Open Interfaces",
+            "Automatización del cálculo y liquidación de tributos federales y estatales (ICMS, IPI, PIS, COFINS, IR, CSLL, INSS, ISS)",
+            "Generación y validación de obligaciones accesorias digitales (EFD ICMS/IPI, EFD Contribuciones (PIS/COFINS), ECD, ECF, REINF, GIAs)",
+            "Elaboración de documentación técnica y manuales funcionales",
+            "Entrenamiento técnico de equipos y capacitación de usuarios finales"
           ]
         },
         {
@@ -67,36 +76,32 @@
           "company": "Vonpar Refrescos S/A (Coca-Cola)",
           "period": "Nov/2000 - Dic/2003",
           "activities": [
-            "Liquidación de impuestos federales y estatales (IPI, ICMS, PIS/COFINS)",
-            "Operación del sistema SAP R/3 para procesos fiscales",
-            "Control de operaciones de cumplimiento tributario en múltiples sucursales",
-            "Emisión y control de documentos fiscales"
+            "Liquidación de tributos federales y estatales de sucursales (IPI, ICMS, PIS/COFINS)",
+            "Operación de módulos del sistema SAP R/3 relacionados a contraloría y procesos fiscales",
+            "Emisión de facturas fiscales"
           ]
         }
       ]
     },
     "skills": {
-      "title": "Habilidades Técnicas",
+      "title": "Competencias Técnicas",
       "content": [
         {
           "title": "Lenguajes de Programación",
           "iconName": "IoCodeSlash",
           "skills": [
-            "Oracle PL/SQL",
+            "Oracle PL/SQL (Avanzado)",
+            "HTML5/CSS3",
             "JavaScript",
             "Node.js",
-            "React.js",
-            "Express.js",
-            "HTML/CSS",
-            "ASP.NET",
-            "C#",
             "Java",
+            "ASP.NET/C#",
             "T-SQL"
           ]
         },
         {
-          "title": "Cloud & Herramientas AWS",
-          "iconName": "IoCloudOutline",
+          "title": "Recursos AWS",
+          "iconName": "IoLogoAmazon",
           "skills": [
             "Amazon QuickSight",
             "AWS Glue",
@@ -107,36 +112,24 @@
           ]
         },
         {
-          "title": "Herramientas de Desarrollo",
+          "title": "Herramientas y Frameworks",
           "iconName": "IoConstructOutline",
           "skills": [
-            "Tailwind",
             "VS Code",
-            "Cursor",
-            "Trae",
-            "Vite",
-            "GitHub",
-            "Excel",
-            "Linux",
-            "MS-DOS",
-            "GIMP",
+            "React.js",
+            "Tailwind CSS",
+            "Git/GitHub",
+            "Excel (Avanzado)",
             "Visual Studio"
           ]
         },
         {
           "title": "Bases de Datos",
           "iconName": "IoServerOutline",
-          "skills": [
-            "Oracle",
-            "SQL Server",
-            "PostgreSQL",
-            "MongoDB",
-            "Access",
-            "MySQL"
-          ]
+          "skills": ["Oracle Database", "SQL Server", "PostgreSQL", "MongoDB"]
         },
         {
-          "title": "Sistemas Fiscales y ERP",
+          "title": "Sistemas Corporativos",
           "iconName": "IoDesktopOutline",
           "skills": [
             "Oracle EBS",
@@ -146,13 +139,12 @@
           ]
         },
         {
-          "title": "Declaraciones Fiscales",
+          "title": "Compliance Fiscal",
           "iconName": "IoReceiptOutline",
           "skills": [
             "EFD Contribuciones",
             "EFD ICMS/IPI",
-            "ECD",
-            "ECF",
+            "ECD/ECF",
             "EFD REINF",
             "NFe/CTe/NFSe"
           ]
@@ -160,7 +152,7 @@
       ]
     },
     "titles": {
-      "title": "Certificados",
+      "title": "Certificaciones",
       "content": [
         {
           "title": "Jornada Full Stack",
@@ -168,83 +160,63 @@
         },
         {
           "title": "Desarrollador Full Stack",
-          "details": "IGTI • 2020 • 148h • Puntuación: 500/500"
+          "details": "IGTI • 2020 • 148h • Nota Máxima (500/500)"
         },
         {
-          "title": "Fundamentos de Scrum",
+          "title": "Scrum Foundation Professional Certificate",
           "details": "CertiProf • 2020"
         },
         {
-          "title": "Insignias de Habilidad de LinkedIn",
+          "title": "Insignias de Competencia LinkedIn",
           "details": "Excel, CSS, JSON, JavaScript, MongoDB"
         },
         {
-          "title": "Desarrollo de Sistemas",
-          "details": "Escuela Virtual Bradesco • 2020 • 45h"
-        },
-        {
-          "title": "Gobernanza de TI",
-          "details": "Escuela Virtual Bradesco • 2020 • 44h"
-        },
-        {
-          "title": "Administración de Bases de Datos",
-          "details": "Escuela Virtual Bradesco • 2020 • 15h"
-        },
-        {
-          "title": "Modelado de Datos",
-          "details": "Escuela Virtual Bradesco • 2020 • 12h"
-        },
-        {
-          "title": "Synchro NFSe",
-          "details": "Synchro Sistemas • 2017 • 8h"
-        },
-        {
-          "title": "Capacitación Técnica Synchro",
+          "title": "Certificación Técnica Synchro",
           "details": "Synchro Sistemas • 2010 • 40h"
         },
         {
-          "title": "Capacitación Funcional Synchro",
+          "title": "Certificación Funcional Synchro",
           "details": "Synchro Sistemas • 2008 • 88h"
         }
       ]
     },
     "highlights": {
-      "title": "Principales Diferenciadores",
+      "title": "Principales Diferenciales",
       "content": [
         {
-          "title": "Grandes Corporaciones",
-          "icon": "IoBusinessOutline",
-          "description": "Historial de proyectos exitosos en grandes empresas"
+          "title": "Portafolio Corporativo",
+          "iconName": "IoBusinessOutline",
+          "description": "Experiencia comprobada en proyectos complejos para grandes empresas"
         },
         {
           "title": "Integración de Sistemas",
-          "icon": "IoSync",
-          "description": "Experiencia consolidada en integración entre ERPs y sistemas fiscales"
+          "iconName": "IoSync",
+          "description": "Especialista en conectividad entre ERPs y plataformas fiscales"
         },
         {
-          "title": "Amazon AWS",
-          "icon": "IoLogoAmazon",
-          "description": "Experiencia práctica en manejo de herramientas y grandes volúmenes de datos en la nube"
+          "title": "Computación en la Nube",
+          "iconName": "IoCloudOutline",
+          "description": "Experiencia práctica con pipelines de datos y analytics de AWS"
         },
         {
-          "title": "Experiencia Fiscal",
-          "icon": "IoLibraryOutline",
-          "description": "Conocimiento profundo de la legislación tributaria brasileña y sistemas de compliance"
+          "title": "Expertise Tributario",
+          "iconName": "IoLibraryOutline",
+          "description": "Conocimiento profundo en legislación tributaria y compliance fiscal"
         },
         {
-          "title": "Trabajo Remoto",
-          "icon": "IoStorefrontOutline",
-          "description": "Adaptado y experimentado en trabajo remoto con equipos distribuidos"
+          "title": "Colaboración Distribuida",
+          "iconName": "IoStorefrontOutline",
+          "description": "Experimentado y adaptado al trabajo remoto con equipos multidisciplinarios"
         },
         {
           "title": "Inglés",
-          "icon": "IoLanguage",
-          "description": "Conocimiento técnico en inglés para programación, documentación y comunicación"
+          "iconName": "IoLanguage",
+          "description": "Conocimiento del idioma para documentación técnica, codificación y comunicación"
         }
       ]
     },
     "footer": {
-      "complement": "Reservados todos los derechos.",
+      "complement": "Todos los derechos reservados.",
       "closing": "Desarrollado con React, Tailwind CSS y mucho "
     }
   }

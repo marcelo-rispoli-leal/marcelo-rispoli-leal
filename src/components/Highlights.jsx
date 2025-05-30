@@ -2,7 +2,7 @@ import {
   IoStarOutline,
   IoBusinessOutline,
   IoSync,
-  IoLogoAmazon,
+  IoCloudOutline,
   IoLibraryOutline,
   IoStorefrontOutline,
   IoLanguage,
@@ -12,7 +12,7 @@ import {
 const iconMap = {
   IoBusinessOutline,
   IoSync,
-  IoLogoAmazon,
+  IoCloudOutline,
   IoLibraryOutline,
   IoStorefrontOutline,
   IoLanguage,

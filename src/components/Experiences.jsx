@@ -32,9 +32,12 @@ function Experience({ experience }) {
         <div className="mb-4 rounded-md bg-teal-200 p-3 dark:bg-teal-800">
           <p className="text-sm">
             <strong className="text-teal-700 dark:text-teal-300">
-              {clients.includes(",") ? "Main Clients: " : "Main Client: "}
-            </strong>{" "}
-            <span className="text-teal-900 dark:text-teal-100">{clients}</span>
+              {clients.label}
+            </strong>
+            {": "}
+            <span className="text-teal-900 dark:text-teal-100">
+              {clients.content}
+            </span>
           </p>
         </div>
       )}
@@ -42,11 +45,8 @@ function Experience({ experience }) {
       {highlight && (
         <div className="mb-4 rounded-md border border-teal-700 bg-emerald-200 p-4 dark:border-teal-300 dark:bg-emerald-800">
           <p className="text-sm">
-            <strong className="text-emerald-700 dark:text-emerald-300">
-              {highlight.split(":")[0]}:
-            </strong>{" "}
             <span className="text-emerald-900 dark:text-emerald-100">
-              {highlight.split(":").slice(1).join(":").trim()}
+              {highlight}
             </span>
           </p>
         </div>
