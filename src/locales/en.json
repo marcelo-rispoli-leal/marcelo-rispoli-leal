@@ -1,0 +1,246 @@
+{
+  "lang": "en",
+  "collections": {
+    "header": {
+      "legend": "Tax Systems & Corporate Data Integration Specialist"
+    },
+    "schools": {
+      "title": "Academic Background",
+      "content": [
+        {
+          "title": "Bachelor's Degree in Computer Science",
+          "institution": "Federal University",
+          "period": "2010-2014"
+        },
+        {
+          "title": "High School and Elementary Education",
+          "institution": "Anchieta College - Porto Alegre",
+          "period": "1986 - 1996"
+        }
+      ]
+    },
+    "works": {
+      "title": "Professional Experience",
+      "content": [
+        {
+          "title": "Technical and Functional Synchro Consultant",
+          "company": "Ninecon Consulting Associates",
+          "period": "Feb/2022 - Mar/2025",
+          "clients": "Amazon, Dufry, Azul, Exterran and FGV",
+          "highlight": "Highlight Project - Amazon: Played a key role in the tax credit recovery project for assets, developing complex workflows integrating Synchro, Oracle EBS and AWS tools (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "activities": [
+            "Development of data integration workflows between Oracle EBS, Synchro and S3 through Redshift and Athena",
+            "Creation of analytical dashboards in QuickSight for tax and accounting data visualization",
+            "Customization of Synchro Open Interfaces for process automation",
+            "Validation of tax assessment and declaration",
+            "Advanced technical support for Synchro in large corporate accounts"
+          ]
+        },
+        {
+          "title": "ERP Systems Developer",
+          "company": "Meta IT Services",
+          "period": "Jan/2021 - Jan/2022",
+          "clients": "Philips Healthcare",
+          "activities": [
+            "Development of reports and features in the Tasy ERP system",
+            "Programming in Oracle PL/SQL, JavaScript and Java",
+            "Analysis and optimization of query performance"
+          ]
+        },
+        {
+          "title": "Technical and Functional Synchro Consultant",
+          "company": "Gesif Consultants (Abreu & Damé)",
+          "period": "Jun/2008 - Aug/2013 | Jan/2015 - Jan/2020",
+          "clients": "Tramontina, Benoit Stores, Paquetá Footwear, Procergs, TAP, Dana Albarus, Bettanin, Dell",
+          "activities": [
+            "Implementation, maintenance and customization of Synchro tax solutions",
+            "Advanced development in Oracle PL/SQL (packages, procedures, functions, triggers, indexes, external tables)",
+            "Support for SAP, Oracle EBS integrations and Synchro Open Interfaces",
+            "Calculation and assessment of ICMS, IPI, PIS, COFINS, IR, CSLL, INSS and ISS taxes",
+            "Generation and validation of accounting and tax obligations (EFD ICMS/IPI, EFD Contributions, ECD, ECF, REINF and State GIAs)",
+            "Preparation of manuals, spreadsheets and activity documentation",
+            "Technical and functional training for teams"
+          ]
+        },
+        {
+          "title": "Tax Accounting Analyst",
+          "company": "Vonpar Soft Drinks S/A (Coca-Cola)",
+          "period": "Nov/2000 - Dec/2003",
+          "activities": [
+            "Assessment of federal and state taxes (IPI, ICMS, PIS/COFINS)",
+            "Operation of SAP R/3 system for tax processes",
+            "Control of multi-unit tax operations",
+            "Issuance and control of tax documents"
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "content": [
+        {
+          "title": "Programming Languages",
+          "iconName": "IoCodeSlash",
+          "skills": [
+            "Oracle PL/SQL",
+            "JavaScript",
+            "Node.js",
+            "React.js",
+            "Express.js",
+            "HTML/CSS",
+            "ASP.NET",
+            "C#",
+            "Java",
+            "T-SQL"
+          ]
+        },
+        {
+          "title": "Cloud & AWS Tools",
+          "iconName": "IoCloudOutline",
+          "skills": [
+            "Amazon QuickSight",
+            "AWS Glue",
+            "Amazon Redshift",
+            "Amazon Athena",
+            "Amazon S3",
+            "AWS StepFunctions"
+          ]
+        },
+        {
+          "title": "Development Tools",
+          "iconName": "IoConstructOutline",
+          "skills": [
+            "Tailwind",
+            "VS Code",
+            "Cursor",
+            "Trae",
+            "Vite",
+            "GitHub",
+            "Excel",
+            "Linux",
+            "MS-DOS",
+            "GIMP",
+            "Visual Studio"
+          ]
+        },
+        {
+          "title": "Databases",
+          "iconName": "IoServerOutline",
+          "skills": [
+            "Oracle",
+            "SQL Server",
+            "PostgreSQL",
+            "MongoDB",
+            "Access",
+            "MySQL"
+          ]
+        },
+        {
+          "title": "Tax and ERP Systems",
+          "iconName": "IoDesktopOutline",
+          "skills": ["Oracle EBS", "SAP R/3", "Tasy", "Synchro Tax Solutions"]
+        },
+        {
+          "title": "Tax Declarations",
+          "iconName": "IoReceiptOutline",
+          "skills": [
+            "EFD Contributions",
+            "EFD ICMS/IPI",
+            "ECD",
+            "ECF",
+            "EFD REINF",
+            "NFe/CTe/NFSe"
+          ]
+        }
+      ]
+    },
+    "titles": {
+      "title": "Certificates",
+      "content": [
+        {
+          "title": "Full Stack Journey",
+          "details": "Hashtag • 2025 • 8h"
+        },
+        {
+          "title": "Full Stack Developer",
+          "details": "IGTI • 2020 • 148h • Score: 500/500"
+        },
+        {
+          "title": "Scrum Foundation",
+          "details": "CertiProf • 2020"
+        },
+        {
+          "title": "LinkedIn Skill Badges",
+          "details": "Excel, CSS, JSON, JavaScript, MongoDB"
+        },
+        {
+          "title": "Systems Development",
+          "details": "Bradesco Virtual School • 2020 • 45h"
+        },
+        {
+          "title": "IT Governance",
+          "details": "Bradesco Virtual School • 2020 • 44h"
+        },
+        {
+          "title": "Database Administration",
+          "details": "Bradesco Virtual School • 2020 • 15h"
+        },
+        {
+          "title": "Data Modeling",
+          "details": "Bradesco Virtual School • 2020 • 12h"
+        },
+        {
+          "title": "Synchro NFSe",
+          "details": "Synchro Systems • 2017 • 8h"
+        },
+        {
+          "title": "Synchro Technical Training",
+          "details": "Synchro Systems • 2010 • 40h"
+        },
+        {
+          "title": "Synchro Functional Training",
+          "details": "Synchro Systems • 2008 • 88h"
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Key Differentiators",
+      "content": [
+        {
+          "title": "Large Corporations",
+          "icon": "IoBusinessOutline",
+          "description": "History of successful projects in large companies"
+        },
+        {
+          "title": "Systems Integration",
+          "icon": "IoSync",
+          "description": "Consolidated experience in integration between ERPs and tax systems"
+        },
+        {
+          "title": "Amazon AWS",
+          "icon": "IoLogoAmazon",
+          "description": "Practical experience in handling cloud tools and large data volumes"
+        },
+        {
+          "title": "Tax Expertise",
+          "icon": "IoLibraryOutline",
+          "description": "Deep knowledge of Brazilian tax legislation and compliance systems"
+        },
+        {
+          "title": "Remote Work",
+          "icon": "IoStorefrontOutline",
+          "description": "Adapted and experienced in remote work with distributed teams"
+        },
+        {
+          "title": "English",
+          "icon": "IoLanguage",
+          "description": "Technical English knowledge for programming, documentation and communication"
+        }
+      ]
+    },
+    "footer": {
+      "complement": "All rights reserved.",
+      "closing": "Developed with React, Tailwind CSS and lots of "
+    }
+  }
+}

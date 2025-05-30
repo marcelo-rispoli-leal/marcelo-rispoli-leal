@@ -6,9 +6,20 @@ import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Highlights from "./Highlights";
-import { IoCafe } from "react-icons/io5";
+import Footer from "./Footer";
+import { useContext } from "react";
+import { AppContext } from "../hooks/useAppContext";
 
 export default function App() {
+  const { collections } = useContext(AppContext);
+
+  if (!collections) {
+    return <div>Loading...</div>;
+  }
+
+  const { header, schools, works, skills, titles, highlights, footer } =
+    collections;
+
   return (
     <div className="min-h-[100svh] w-full bg-neutral-100 font-sans text-neutral-900 transition-colors dark:bg-neutral-900 dark:text-neutral-100">
       {/* Header */}
@@ -20,25 +31,21 @@ export default function App() {
 
       {/* Main Content */}
       <main className="pt-20">
-        <Header />
-        <Carousel />
-        <Graduations />
-        <Experiences />
-        <Skills />
-        <Certificates />
-        <Highlights />
+        <Header legend={header.legend} />
+        <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+          <Carousel />
+          <Graduations title={schools.title} content={schools.content} />
+          <Experiences title={works.title} content={works.content} />
+          <Skills title={skills.title} content={skills.content} />
+          <Certificates title={titles.title} content={titles.content} />
+          <Highlights title={highlights.title} content={highlights.content} />
+        </div>
       </main>
 
       {/* Footer */}
       <footer className="bg-neutral-200 py-8 text-center text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
         <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
-          <p className="text-sm">
-            © 2025 Marcelo Rispoli Leal. Todos os direitos reservados.
-          </p>
-          <p className="mt-2 inline-flex items-end text-xs opacity-75">
-            Desenvolvido com React, Tailwind CSS e muito
-            <IoCafe className="ml-0.75 text-sm" />
-          </p>
+          <Footer complement={footer.complement} closing={footer.closing} />
         </div>
       </footer>
     </div>

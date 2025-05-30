@@ -1,0 +1,251 @@
+{
+  "lang": "pt",
+  "collections": {
+    "header": {
+      "legend": "Especialista em Sistemas Fiscais & Integração de Dados Corporativos"
+    },
+    "schools": {
+      "title": "Formação Acadêmica",
+      "content": [
+        {
+          "title": "Bacharelado em Ciência da Computação",
+          "institution": "Universidade Federal",
+          "period": "2010-2014"
+        },
+        {
+          "title": "Ensino Médio e Fundamental",
+          "institution": "Colégio Anchieta - Porto Alegre",
+          "period": "1986 - 1996"
+        }
+      ]
+    },
+    "works": {
+      "title": "Experiência Profissional",
+      "content": [
+        {
+          "title": "Consultor Técnico e Funcional Synchro",
+          "company": "Ninecon Consultores Associados",
+          "period": "Fev/2022 - Mar/2025",
+          "clients": "Amazon, Dufry, Azul, Exterran e FGV",
+          "highlight": "Projeto Destaque - Amazon: Desempenhou papel chave no projeto de recuperação de créditos fiscais sobre ativos, desenvolvendo workflows complexos integrando Synchro, Oracle EBS e ferramentas AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "activities": [
+            "Desenvolvimento de workflows de integração de dados entre Oracle EBS, Synchro e S3 através do Redshift e Athena",
+            "Criação de dashboards analíticos no QuickSight para visualização de dados fiscais e contábeis",
+            "Customização de Open Interfaces Synchro para automação de processos",
+            "Validação da apuração e declaração de impostos",
+            "Suporte técnico Synchro avançado para grandes contas corporativas"
+          ]
+        },
+        {
+          "title": "Desenvolvedor de Sistemas ERP",
+          "company": "Meta Serviços em Informática",
+          "period": "Jan/2021 - Jan/2022",
+          "clients": "Philips Healthcare",
+          "activities": [
+            "Desenvolvimento de relatórios e funcionalidades no sistema ERP Tasy",
+            "Programação em Oracle PL/SQL, JavaScript e Java",
+            "Análise e otimização de performance de consultas"
+          ]
+        },
+        {
+          "title": "Consultor Técnico e Funcional Synchro",
+          "company": "Gesif Consultores (Abreu & Damé)",
+          "period": "Jun/2008 - Ago/2013 | Jan/2015 - Jan/2020",
+          "clients": "Tramontina, Lojas Benoit, Paquetá Calçados, Procergs, TAP, Dana Albarus, Bettanin, Dell",
+          "activities": [
+            "Implementação, manutenção e customização de soluções fiscais Synchro",
+            "Desenvolvimento avançado em Oracle PL/SQL (packages, procedures, functions, triggers, indexes, external tables)",
+            "Atendimento a integrações SAP, Oracle EBS e a Open Interfaces Synchro",
+            "Cálculo e apuração dos impostos ICMS, IPI, PIS, COFINS, IR, CSLL, INSS e ISS",
+            "Geração e validação de obrigações contábeis e fiscais (EFD ICMS/IPI, EFD Contribuições, ECD, ECF, REINF e GIAs Estaduais)",
+            "Elaboração de manuais, planilhas e documentação de atividades",
+            "Treinamento técnico e funcional de equipes"
+          ]
+        },
+        {
+          "title": "Analista Contábil Fiscal",
+          "company": "Vonpar Refrescos S/A (Coca-Cola)",
+          "period": "Nov/2000 - Dez/2003",
+          "activities": [
+            "Apuração de impostos federais e estaduais (IPI, ICMS, PIS/COFINS)",
+            "Operação do sistema SAP R/3 para processos fiscais",
+            "Controle de operações fiscais multi-unidades",
+            "Emissão e controle de documentos fiscais"
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Competências Técnicas",
+      "content": [
+        {
+          "title": "Linguagens de Programação",
+          "iconName": "IoCodeSlash",
+          "skills": [
+            "Oracle PL/SQL",
+            "JavaScript",
+            "Node.js",
+            "React.js",
+            "Express.js",
+            "HTML/CSS",
+            "ASP.NET",
+            "C#",
+            "Java",
+            "T-SQL"
+          ]
+        },
+        {
+          "title": "Cloud & Ferramentas AWS",
+          "iconName": "IoCloudOutline",
+          "skills": [
+            "Amazon QuickSight",
+            "AWS Glue",
+            "Amazon Redshift",
+            "Amazon Athena",
+            "Amazon S3",
+            "AWS StepFunctions"
+          ]
+        },
+        {
+          "title": "Ferramentas de Desenvolvimento",
+          "iconName": "IoConstructOutline",
+          "skills": [
+            "Tailwind",
+            "VS Code",
+            "Cursor",
+            "Trae",
+            "Vite",
+            "GitHub",
+            "Excel",
+            "Linux",
+            "MS-DOS",
+            "GIMP",
+            "Visual Studio"
+          ]
+        },
+        {
+          "title": "Bancos de Dados",
+          "iconName": "IoServerOutline",
+          "skills": [
+            "Oracle",
+            "SQL Server",
+            "PostgreSQL",
+            "MongoDB",
+            "Access",
+            "MySQL"
+          ]
+        },
+        {
+          "title": "Sistemas Fiscais e ERP",
+          "iconName": "IoDesktopOutline",
+          "skills": [
+            "Oracle EBS",
+            "SAP R/3",
+            "Tasy",
+            "Synchro Soluções Fiscais"
+          ]
+        },
+        {
+          "title": "Declarações Fiscais",
+          "iconName": "IoReceiptOutline",
+          "skills": [
+            "EFD Contribuições",
+            "EFD ICMS/IPI",
+            "ECD",
+            "ECF",
+            "EFD REINF",
+            "NFe/CTe/NFSe"
+          ]
+        }
+      ]
+    },
+    "titles": {
+      "title": "Certificados",
+      "content": [
+        {
+          "title": "Jornada Full Stack",
+          "details": "Hashtag • 2025 • 8h"
+        },
+        {
+          "title": "Desenvolvedor Full Stack",
+          "details": "IGTI • 2020 • 148h • Pontuação: 500/500"
+        },
+        {
+          "title": "Scrum Foundation",
+          "details": "CertiProf • 2020"
+        },
+        {
+          "title": "Selos de Competência LinkedIn",
+          "details": "Excel, CSS, JSON, JavaScript, MongoDB"
+        },
+        {
+          "title": "Desenvolvimento de Sistemas",
+          "details": "Escola Virtual Bradesco • 2020 • 45h"
+        },
+        {
+          "title": "Governança de TI",
+          "details": "Escola Virtual Bradesco • 2020 • 44h"
+        },
+        {
+          "title": "Administração de Banco de Dados",
+          "details": "Escola Virtual Bradesco • 2020 • 15h"
+        },
+        {
+          "title": "Modelagem de Dados",
+          "details": "Escola Virtual Bradesco • 2020 • 12h"
+        },
+        {
+          "title": "Synchro NFSe",
+          "details": "Synchro Sistemas • 2017 • 8h\""
+        },
+        {
+          "title": "Treinamento Técnico Synchro",
+          "details": "Synchro Sistemas • 2010 • 40h"
+        },
+        {
+          "title": "Treinamento Funcional Synchro",
+          "details": "Synchro Sistemas • 2008 • 88h"
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Principais Diferenciais",
+      "content": [
+        {
+          "title": "Grandes Corporações",
+          "icon": "IoBusinessOutline",
+          "description": "Histórico de projetos bem-sucedidos em grandes empresas"
+        },
+        {
+          "title": "Integração de Sistemas",
+          "icon": "IoSync",
+          "description": "Experiência consolidada em integração entre ERPs e sistemas fiscais"
+        },
+        {
+          "title": "Amazon AWS",
+          "icon": "IoLogoAmazon",
+          "description": "Experiência prática em lidar com ferramentas e grande volumes de dados em nuvem"
+        },
+        {
+          "title": "Expertise Fiscal",
+          "icon": "IoLibraryOutline",
+          "description": "Conhecimento profundo da legislação tributária brasileira e sistemas de compliance"
+        },
+        {
+          "title": "Trabalho Remoto",
+          "icon": "IoStorefrontOutline",
+          "description": "Adaptado e experiente em trabalho remoto com equipes distribuídas"
+        },
+        {
+          "title": "Inglês",
+          "icon": "IoLanguage",
+          "description": "Conhecimento técnico em inglês para programação, documentação e comunicação"
+        }
+      ]
+    },
+    "footer": {
+      "complement": "Todos os direitos reservados.",
+      "closing": "Desenvolvido com React, Tailwind CSS e muito "
+    }
+  }
+}

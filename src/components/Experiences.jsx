@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import { IoIdCardOutline } from "react-icons/io5";
-import { useThemeContext } from "../hooks/useThemeContext";
 
 // Sub-component for rendering each experience
 function Experience({ experience }) {
@@ -70,7 +68,7 @@ function Experience({ experience }) {
   );
 }
 
-export default function Experiences() {
+/* export default function Experiences() {
   const [experiences, setExperiences] = useState([]);
   const [sectionTitle, setSectionTitle] = useState(""); // Novo estado para o título
   const [loading, setLoading] = useState(true);
@@ -132,21 +130,19 @@ export default function Experiences() {
         </div>
       </section>
     );
-  }
-
+  } */
+export default function Experiences({ title, content }) {
   return (
     <section className="pt-16">
-      <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
-        <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
-          <IoIdCardOutline className="mr-3" />
-          {sectionTitle}
-        </h2>
+      <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
+        <IoIdCardOutline className="mr-3" />
+        {title}
+      </h2>
 
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <Experience key={index} experience={exp} />
-          ))}
-        </div>
+      <div className="space-y-8">
+        {content.map((exp, index) => (
+          <Experience key={index} experience={exp} />
+        ))}
       </div>
     </section>
   );

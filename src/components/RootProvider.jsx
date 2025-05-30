@@ -1,21 +1,22 @@
-import { ThemeContext } from "../hooks/useThemeContext.js";
+import { AppContext } from "../hooks/useAppContext.js";
 import { useThemeProvider } from "../hooks/useThemeProvider.js";
 import { useLanguageProvider } from "../hooks/useLanguageProvider.js";
 
-export function ThemeProvider({ children }) {
+export function RootProvider({ children }) {
   const { isDarkTheme, toggleTheme } = useThemeProvider();
-  const { language, changeLanguage } = useLanguageProvider();
+  const { language, toggleLanguage, collections } = useLanguageProvider();
 
   return (
-    <ThemeContext.Provider
+    <AppContext.Provider
       value={{
         isDarkTheme,
         toggleTheme,
         language,
-        changeLanguage,
+        toggleLanguage,
+        collections,
       }}
     >
       {children}
-    </ThemeContext.Provider>
+    </AppContext.Provider>
   );
 }

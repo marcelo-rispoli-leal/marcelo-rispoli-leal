@@ -1,10 +1,10 @@
-// ThemeToggler dependencies
+// ToggleTheme dependencies
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
-import { useThemeContext } from "../hooks/useThemeContext";
-// Exports the ThemeToggler to import in the NavBar
-export default function ThemeToggler() {
-  const { isDarkTheme, toggleTheme } = useThemeContext();
-  // Returns the ThemeToggler component
+import { useAppContext } from "../hooks/useAppContext";
+// Exports the ToggleTheme to import in the NavBar
+export default function ToggleTheme() {
+  const { isDarkTheme, toggleTheme } = useAppContext();
+  // Returns the ToggleTheme component
   return (
     <button
       onClick={toggleTheme}

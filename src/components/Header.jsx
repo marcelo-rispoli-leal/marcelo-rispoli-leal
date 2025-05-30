@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ legend }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-teal-600 via-emerald-600 to-teal-800 py-16 text-white">
       <div className="absolute inset-0 bg-black/20"></div>
@@ -10,11 +10,9 @@ export default function Header() {
             className="m-auto flex h-32 w-32 rounded-full bg-white/20 text-4xl font-bold backdrop-blur-sm"
           />
           <h1 className="mt-8 mb-4 text-5xl font-bold md:text-6xl">
-            Marcelo Rispoli Leal
+            {document.title}
           </h1>
-          <p className="text-xl font-light opacity-90 md:text-2xl">
-            Especialista em Sistemas Fiscais & Integração de Dados Corporativos
-          </p>
+          <p className="text-xl font-light opacity-90 md:text-2xl">{legend}</p>
         </div>
       </div>
     </section>
