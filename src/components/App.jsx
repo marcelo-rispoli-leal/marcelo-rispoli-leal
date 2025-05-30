@@ -9,12 +9,20 @@ import Highlights from "./Highlights";
 import Footer from "./Footer";
 import { useContext } from "react";
 import { AppContext } from "../hooks/useAppContext";
+import { IoSync } from "react-icons/io5";
 
 export default function App() {
   const { collections } = useContext(AppContext);
 
   if (!collections) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900">
+        <IoSync className="mb-4 h-16 w-16 animate-spin text-teal-700" />
+        <span className="text-neutral-900 dark:text-neutral-100">
+          Loading...
+        </span>
+      </div>
+    );
   }
 
   const { header, schools, works, skills, titles, highlights, footer } =

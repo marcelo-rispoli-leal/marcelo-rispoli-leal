@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export function useLanguageProvider() {
   const [language, setLanguage] = useState(() => {
     const savedLanguage = localStorage.getItem("language");
-    return savedLanguage || "pt";
+    return savedLanguage || "en";
   });
 
   const [collections, setCollections] = useState(null);
