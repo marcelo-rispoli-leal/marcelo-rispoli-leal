@@ -37,12 +37,12 @@
           ]
         },
         {
-          "title": "Desarrollador de Sistemas ERP",
+          "title": "Desarrollador Tasy EMR",
           "company": "Meta Servicios en Informática",
           "period": "Ene/2021 - Ene/2022",
           "clients": "Philips Healthcare",
           "activities": [
-            "Desarrollo de informes y funcionalidades en el sistema ERP Tasy",
+            "Desarrollo de informes y funcionalidades en el sistema Tasy EMR",
             "Programación en Oracle PL/SQL, JavaScript y Java",
             "Análisis y optimización del rendimiento de consultas"
           ]
@@ -69,7 +69,7 @@
           "activities": [
             "Liquidación de impuestos federales y estatales (IPI, ICMS, PIS/COFINS)",
             "Operación del sistema SAP R/3 para procesos fiscales",
-            "Control de operaciones fiscales multi-unidades",
+            "Control de operaciones de cumplimiento tributario en múltiples sucursales",
             "Emisión y control de documentos fiscales"
           ]
         }
@@ -141,7 +141,7 @@
           "skills": [
             "Oracle EBS",
             "SAP R/3",
-            "Tasy",
+            "Tasy EMR",
             "Synchro Soluciones Fiscales"
           ]
         },

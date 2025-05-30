@@ -27,7 +27,7 @@
           "company": "Ninecon Consultores Associados",
           "period": "Fev/2022 - Mar/2025",
           "clients": "Amazon, Dufry, Azul, Exterran e FGV",
-          "highlight": "Projeto Destaque - Amazon: Desempenhou papel chave no projeto de recuperação de créditos fiscais sobre ativos, desenvolvendo workflows complexos integrando Synchro, Oracle EBS e ferramentas AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "highlight": "Projeto Destaque - Amazon: Desempenhou papel chave na iniciativa de recuperação de créditos fiscais sobre ativos, desenvolvendo workflows complexos integrando Synchro, Oracle EBS e ferramentas AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
           "activities": [
             "Desenvolvimento de workflows de integração de dados entre Oracle EBS, Synchro e S3 através do Redshift e Athena",
             "Criação de dashboards analíticos no QuickSight para visualização de dados fiscais e contábeis",
@@ -37,12 +37,12 @@
           ]
         },
         {
-          "title": "Desenvolvedor de Sistemas ERP",
+          "title": "Desenvolvedor Tasy EMR",
           "company": "Meta Serviços em Informática",
           "period": "Jan/2021 - Jan/2022",
           "clients": "Philips Healthcare",
           "activities": [
-            "Desenvolvimento de relatórios e funcionalidades no sistema ERP Tasy",
+            "Desenvolvimento de relatórios e funcionalidades no sistema Tasy EMR",
             "Programação em Oracle PL/SQL, JavaScript e Java",
             "Análise e otimização de performance de consultas"
           ]
@@ -69,7 +69,7 @@
           "activities": [
             "Apuração de impostos federais e estaduais (IPI, ICMS, PIS/COFINS)",
             "Operação do sistema SAP R/3 para processos fiscais",
-            "Controle de operações fiscais multi-unidades",
+            "Controle de operações de conformidade tributária em diversas filiais",
             "Emissão e controle de documentos fiscais"
           ]
         }
@@ -141,7 +141,7 @@
           "skills": [
             "Oracle EBS",
             "SAP R/3",
-            "Tasy",
+            "Tasy EMR",
             "Synchro Soluções Fiscais"
           ]
         },

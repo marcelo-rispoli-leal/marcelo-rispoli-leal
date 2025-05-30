@@ -27,7 +27,7 @@
           "company": "Ninecon Consulting Associates",
           "period": "Feb/2022 - Mar/2025",
           "clients": "Amazon, Dufry, Azul, Exterran and FGV",
-          "highlight": "Highlight Project - Amazon: Played a key role in the tax credit recovery project for assets, developing complex workflows integrating Synchro, Oracle EBS and AWS tools (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "highlight": "Highlight Project - Amazon: Held a key role in the tax credit recovery initiative for assets, developing complex workflows integrating Synchro, Oracle EBS and AWS tools (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
           "activities": [
             "Development of data integration workflows between Oracle EBS, Synchro and S3 through Redshift and Athena",
             "Creation of analytical dashboards in QuickSight for tax and accounting data visualization",
@@ -37,12 +37,12 @@
           ]
         },
         {
-          "title": "ERP Systems Developer",
+          "title": "Tasy EMR Developer",
           "company": "Meta IT Services",
           "period": "Jan/2021 - Jan/2022",
           "clients": "Philips Healthcare",
           "activities": [
-            "Development of reports and features in the Tasy ERP system",
+            "Development of reports and features in the Tasy EMR system",
             "Programming in Oracle PL/SQL, JavaScript and Java",
             "Analysis and optimization of query performance"
           ]
@@ -54,10 +54,10 @@
           "clients": "Tramontina, Benoit Stores, Paquetá Footwear, Procergs, TAP, Dana Albarus, Bettanin, Dell",
           "activities": [
             "Implementation, maintenance and customization of Synchro tax solutions",
-            "Advanced development in Oracle PL/SQL (packages, procedures, functions, triggers, indexes, external tables)",
+            "Advanced Oracle PL/SQL development (packages, procedures, functions, triggers, indexes, external tables)",
             "Support for SAP, Oracle EBS integrations and Synchro Open Interfaces",
             "Calculation and assessment of ICMS, IPI, PIS, COFINS, IR, CSLL, INSS and ISS taxes",
-            "Generation and validation of accounting and tax obligations (EFD ICMS/IPI, EFD Contributions, ECD, ECF, REINF and State GIAs)",
+            "Generation and validation of accounting and tax obligations (EFD ICMS/IPI, EFD Social Contribution Taxes, ECD, ECF, REINF and State GIAs)",
             "Preparation of manuals, spreadsheets and activity documentation",
             "Technical and functional training for teams"
           ]
@@ -69,7 +69,7 @@
           "activities": [
             "Assessment of federal and state taxes (IPI, ICMS, PIS/COFINS)",
             "Operation of SAP R/3 system for tax processes",
-            "Control of multi-unit tax operations",
+            "Tax compliance operations control across multiple units",
             "Issuance and control of tax documents"
           ]
         }
@@ -138,7 +138,12 @@
         {
           "title": "Tax and ERP Systems",
           "iconName": "IoDesktopOutline",
-          "skills": ["Oracle EBS", "SAP R/3", "Tasy", "Synchro Tax Solutions"]
+          "skills": [
+            "Oracle EBS",
+            "SAP R/3",
+            "Tasy EMR",
+            "Synchro Tax Solutions"
+          ]
         },
         {
           "title": "Tax Declarations",
@@ -170,7 +175,7 @@
           "details": "CertiProf • 2020"
         },
         {
-          "title": "LinkedIn Skill Badges",
+          "title": "LinkedIn Skill Assessments",
           "details": "Excel, CSS, JSON, JavaScript, MongoDB"
         },
         {
