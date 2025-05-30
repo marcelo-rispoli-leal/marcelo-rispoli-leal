@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useThemeContext } from "../hooks/useThemeContext";
 import {
   IoColorWandOutline,
   IoCodeSlash,
@@ -21,34 +22,30 @@ const iconMap = {
 
 export default function Skills() {
   const [skillCategories, setSkillCategories] = useState([]);
+  const [sectionTitle, setSectionTitle] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { language } = useThemeContext();
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
-    async function fetchSkills() {
-      if (!apiBaseUrl) {
-        setError(
-          "API base URL not set. Please define VITE_API_BASE_URL in your .env.local.",
-        );
-        setLoading(false);
-        return;
-      }
+    const fetchSkills = async () => {
       try {
-        const response = await fetch(`${apiBaseUrl}/api/skills`);
-        if (!response.ok) {
-          throw new Error(`HTTP Error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setSkillCategories(data);
-      } catch (e) {
-        setError(e.message);
-      } finally {
+        const response = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/api/skills?lang=${language}`,
+        );
+        if (!response.ok) throw new Error("Network response was not ok");
+        const { content, title } = await response.json();
+        setSkillCategories(content);
+        setSectionTitle(title);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
         setLoading(false);
       }
-    }
+    };
     fetchSkills();
-  }, [apiBaseUrl]);
+  }, [apiBaseUrl, language]);
 
   if (loading) {
     return (
@@ -91,7 +88,7 @@ export default function Skills() {
       <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
         <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
           <IoColorWandOutline className="mr-3" />
-          Competências Técnicas
+          {sectionTitle}
         </h2>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -102,7 +99,7 @@ export default function Skills() {
 
             return (
               <div
-                key={category._id || index}
+                key={index}
                 className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700"
               >
                 <h3 className="mb-4 flex items-center text-lg font-bold text-teal-800 dark:text-teal-200">

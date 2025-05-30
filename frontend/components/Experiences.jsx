@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoIdCardOutline } from "react-icons/io5";
+import { useThemeContext } from "../hooks/useThemeContext";
 
 // Sub-component for rendering each experience
 function Experience({ experience }) {
@@ -71,38 +72,31 @@ function Experience({ experience }) {
 
 export default function Experiences() {
   const [experiences, setExperiences] = useState([]);
+  const [sectionTitle, setSectionTitle] = useState(""); // Novo estado para o título
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  // Vite exposes env variables on import.meta.env
+  const { language } = useThemeContext();
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
-    async function fetchExperiences() {
-      if (!apiBaseUrl) {
-        setError(
-          "API base URL is not configured. Please set VITE_API_BASE_URL in your .env.local file.",
-        );
-        setLoading(false);
-        return;
-      }
+    const fetchExperiences = async () => {
       try {
-        const response = await fetch(`${apiBaseUrl}/api/experiences`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setExperiences(data);
-      } catch (e) {
-        console.error("Failed to fetch experiences:", e);
-        setError(e.message);
-      } finally {
+        // Adicionar '/api' antes de '/graduations'
+        const response = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/api/experiences?lang=${language}`,
+        );
+        if (!response.ok) throw new Error("Network response was not ok");
+        const { content, title } = await response.json(); // 'title' aqui é o título da seção
+        setExperiences(content);
+        setSectionTitle(title); // Definir o título da seção
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
         setLoading(false);
       }
-    }
-
+    };
     fetchExperiences();
-  }, [apiBaseUrl]); // Re-run effect if apiBaseUrl changes (though it shouldn't in this context)
+  }, [apiBaseUrl, language]);
 
   if (loading) {
     return (
@@ -145,12 +139,12 @@ export default function Experiences() {
       <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
         <h2 className="mb-12 inline-flex w-full justify-center text-center text-4xl font-bold text-teal-700 dark:text-teal-300">
           <IoIdCardOutline className="mr-3" />
-          Experiência Profissional
+          {sectionTitle}
         </h2>
 
         <div className="space-y-8">
-          {experiences.map((exp) => (
-            <Experience key={exp._id || exp.title} experience={exp} />
+          {experiences.map((exp, index) => (
+            <Experience key={index} experience={exp} />
           ))}
         </div>
       </div>

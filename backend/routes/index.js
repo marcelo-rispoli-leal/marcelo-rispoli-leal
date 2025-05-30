@@ -5,13 +5,13 @@ import certificatesRoutes from "./certificates.js";
 import highlightsRoutes from "./highlights.js";
 // Import other routes here as needed.
 
-async function routes(fastify, options) {
+async function routes(fastify) {
   // Register all routes
-  fastify.register(experiencesRoutes, options);
-  fastify.register(graduationsRoutes, options);
-  fastify.register(skillsRoutes, options);
-  fastify.register(certificatesRoutes, options);
-  fastify.register(highlightsRoutes, options);
+  fastify.register(experiencesRoutes, { prefix: "/api" });
+  fastify.register(graduationsRoutes, { prefix: "/api" });
+  fastify.register(skillsRoutes, { prefix: "/api" });
+  fastify.register(certificatesRoutes, { prefix: "/api" });
+  fastify.register(highlightsRoutes, { prefix: "/api" });
   // Register other routes here as needed.
 }
 

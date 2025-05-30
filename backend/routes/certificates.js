@@ -2,14 +2,13 @@ import { getAllCertificates } from "../controllers/certificatesController.js";
 
 async function certificatesRoutes(fastify, _) {
   // GET - Get all certificates
-  fastify.get("/api/certificates", async (_, reply) => {
+  fastify.get("/certificates", async (request, reply) => {
     try {
-      const certificates = await getAllCertificates();
-      fastify.log.info(`Found ${certificates.length} certificates`);
-      reply.send(certificates);
+      const lang = request.query.lang || "pt";
+      const data = await getAllCertificates(lang);
+      reply.send(data);
     } catch (error) {
-      fastify.log.error("Error when searching for certificates:", error);
-      reply.status(500).send({ message: "Error fetching data from server" });
+      reply.status(500).send({ message: error.message });
     }
   });
 }

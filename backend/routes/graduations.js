@@ -2,14 +2,13 @@ import { getAllGraduations } from "../controllers/graduationsController.js";
 
 async function graduationsRoutes(fastify, _) {
   // GET - Get all graduations
-  fastify.get("/api/graduations", async (_, reply) => {
+  fastify.get("/graduations", async (request, reply) => {
     try {
-      const graduations = await getAllGraduations();
-      fastify.log.info(`Found ${graduations.length} graduations`);
-      reply.send(graduations);
+      const lang = request.query.lang || "pt";
+      const data = await getAllGraduations(lang);
+      reply.send(data);
     } catch (error) {
-      fastify.log.error("Error when searching for graduations:", error);
-      reply.status(500).send({ message: "Error fetching data from server" });
+      reply.status(500).send({ message: error.message });
     }
   });
 }

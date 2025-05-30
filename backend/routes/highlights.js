@@ -2,14 +2,13 @@ import { getAllHighlights } from "../controllers/highlightsController.js";
 
 async function highlightsRoutes(fastify, _) {
   // GET - Get all highlights
-  fastify.get("/api/highlights", async (_, reply) => {
+  fastify.get("/highlights", async (request, reply) => {
     try {
-      const highlights = await getAllHighlights();
-      fastify.log.info(`Found ${highlights.length} highlights`);
-      reply.send(highlights);
+      const lang = request.query.lang || "pt";
+      const data = await getAllHighlights(lang);
+      reply.send(data);
     } catch (error) {
-      fastify.log.error("Error when searching for highlights:", error);
-      reply.status(500).send({ message: "Error fetching data from server" });
+      reply.status(500).send({ message: error.message });
     }
   });
 }
