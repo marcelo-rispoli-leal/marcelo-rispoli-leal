@@ -92,11 +92,11 @@
           "skills": [
             "Oracle PL/SQL (Avançado)",
             "HTML5/CSS3",
-            "JavaScripts",
+            "JavaScript",
             "Node.js",
             "Java",
-            "ASP.NET/C#",
-            "T-SQL"
+            "ASP.net/C#",
+            "VBA"
           ]
         },
         {
@@ -120,6 +120,8 @@
             "Tailwind CSS",
             "Git/GitHub",
             "Excel (Avançado)",
+            "Postman",
+            "GIMP",
             "Visual Studio"
           ]
         },
@@ -144,8 +146,8 @@
           "skills": [
             "EFD Contribuições",
             "EFD ICMS/IPI",
+            "REINF",
             "ECD/ECF",
-            "EFD REINF",
             "NFe/CTe/NFSe"
           ]
         }

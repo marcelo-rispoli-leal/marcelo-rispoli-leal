@@ -95,8 +95,8 @@
             "JavaScript",
             "Node.js",
             "Java",
-            "ASP.NET/C#",
-            "T-SQL"
+            "ASP.net/C#",
+            "VBA"
           ]
         },
         {
@@ -120,6 +120,8 @@
             "Tailwind CSS",
             "Git/GitHub",
             "Excel (Advanced)",
+            "Postman",
+            "GIMP",
             "Visual Studio"
           ]
         },
@@ -144,8 +146,8 @@
           "skills": [
             "EFD Contributions",
             "EFD ICMS/IPI",
+            "REINF",
             "ECD/ECF",
-            "EFD REINF",
             "NFe/CTe/NFSe"
           ]
         }
