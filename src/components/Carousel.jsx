@@ -106,7 +106,7 @@ export default function Carousel() {
                     className="h-full w-full object-contain"
                   />
                   {item.label && (
-                    <p className="mt-[-38px] text-center text-2xl font-semibold text-neutral-700 dark:text-neutral-300">
+                    <p className="mt-[-38px] text-center text-2xl font-semibold text-neutral-100">
                       {item.label}
                     </p>
                   )}
