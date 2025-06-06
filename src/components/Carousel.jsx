@@ -25,7 +25,7 @@ const iconMap = {
 };
 
 export default function Carousel() {
-  const { language } = useAppContext();
+  const { language, isDarkTheme } = useAppContext();
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -85,9 +85,9 @@ export default function Carousel() {
         </div>
 
         <div className="relative">
-          {/* Container com aspect ratio fixo */}
+          {/* Container with fixed aspect ratio */}
           <div className="relative w-full pb-[56.25%]">
-            {/* Grid para imagens */}
+            {/* Grid for images */}
             <div
               className={`absolute inset-0 grid gap-4 sm:gap-6 md:gap-8`}
               style={{
@@ -101,7 +101,7 @@ export default function Carousel() {
                   className="flex flex-col items-center justify-center p-2 md:p-4"
                 >
                   <img
-                    src={item.src}
+                    src={isDarkTheme && item.dark ? item.dark : item.src}
                     alt={item.alt || item.label}
                     className="h-full w-full object-contain"
                   />
@@ -115,7 +115,7 @@ export default function Carousel() {
             </div>
           </div>
 
-          {/* Botões de navegação */}
+          {/* Navegation buttons */}
           <button
             onClick={prevSlide}
             className="absolute top-1/2 left-0 -translate-y-1/2 transform rounded-full bg-neutral-800/50 p-2 text-white hover:bg-neutral-800/80 focus:outline-none md:-left-12 dark:bg-neutral-200/50 dark:hover:bg-neutral-200/80"
@@ -132,7 +132,7 @@ export default function Carousel() {
           </button>
         </div>
 
-        {/* Indicadores de slide (dots) */}
+        {/* slide Indicators (dots) */}
         <div className="mt-8 flex flex-col items-center justify-center space-y-4">
           <div className="flex justify-center space-x-2">
             {slides.map((_, index) => (
