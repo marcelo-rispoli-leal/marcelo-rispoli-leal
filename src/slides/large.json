@@ -8,7 +8,8 @@
     "rows": 4,
     "content": [
       {
-        "src": "/images/amazon.webp",
+        "src": "/images/amazon_light.webp",
+        "dark": "/images/amazon_dark.webp",
         "alt": "Amazon"
       },
       {
@@ -40,7 +41,8 @@
         "alt": "Benoit"
       },
       {
-        "src": "/images/paqueta.webp",
+        "src": "/images/paqueta_light.webp",
+        "dark": "/images/paqueta_dark.webp",
         "alt": "Paquetá"
       },
       {
@@ -65,7 +67,8 @@
         "alt": "Dana"
       },
       {
-        "src": "/images/dorf.webp",
+        "src": "/images/dorf_light.webp",
+        "dark": "/images/dorf_dark.webp",
         "alt": "Dorf Ketal"
       },
       {
@@ -87,11 +90,13 @@
         "alt": "Oracle PL/SQL"
       },
       {
-        "src": "/images/html5.webp",
+        "src": "/images/html_light.webp",
+        "dark": "/images/html_dark.webp",
         "alt": "HTML"
       },
       {
-        "src": "/images/css3.webp",
+        "src": "/images/css_light.webp",
+        "dark": "/images/css_dark.webp",
         "alt": "CSS"
       },
       {
@@ -99,7 +104,8 @@
         "alt": "JavaScript"
       },
       {
-        "src": "/images/node.webp",
+        "src": "/images/node_light.webp",
+        "dark": "/images/node_dark.webp",
         "alt": "Node.js"
       },
       {
@@ -115,7 +121,8 @@
         "alt": "C#"
       },
       {
-        "src": "/images/vba.webp",
+        "src": "/images/vba_light.webp",
+        "dark": "/images/vba_dark.webp",
         "alt": "VBA"
       }
     ]
@@ -167,11 +174,13 @@
         "alt": "VS Code"
       },
       {
-        "src": "/images/react.webp",
+        "src": "/images/react_light.webp",
+        "dark": "/images/react_dark.webp",
         "alt": "React.js"
       },
       {
-        "src": "/images/tailwind.webp",
+        "src": "/images/tailwind_light.webp",
+        "dark": "/images/tailwind_dark.webp",
         "alt": "Tailwind CSS"
       },
       {
@@ -179,7 +188,8 @@
         "alt": "Git"
       },
       {
-        "src": "/images/github.webp",
+        "src": "/images/github_light.webp",
+        "dark": "/images/github_dark.webp",
         "alt": "GitHub"
       },
       {
@@ -191,7 +201,8 @@
         "alt": "Postman"
       },
       {
-        "src": "/images/gimp.webp",
+        "src": "/images/gimp_light.webp",
+        "dark": "/images/gimp_dark.webp",
         "alt": "GIMP"
       },
       {
@@ -209,19 +220,23 @@
     "rows": 2,
     "content": [
       {
-        "src": "/images/oracle.webp",
+        "src": "/images/oracle_light.webp",
+        "dark": "/images/oracle_dark.webp",
         "alt": "Oracle Database"
       },
       {
-        "src": "/images/mssql.webp",
+        "src": "/images/mssql_light.webp",
+        "dark": "/images/mssql_dark.webp",
         "alt": "SQL Server"
       },
       {
-        "src": "/images/postgre.webp",
+        "src": "/images/postgre_light.webp",
+        "dark": "/images/postgre_dark.webp",
         "alt": "PostgreSQL"
       },
       {
-        "src": "/images/mongodb.webp",
+        "src": "/images/mongodb_light.webp",
+        "dark": "/images/mongodb_dark.webp",
         "alt": "MongoDB"
       }
     ]
@@ -235,7 +250,8 @@
     "rows": 2,
     "content": [
       {
-        "src": "/images/ebs.webp",
+        "src": "/images/ebs_light.webp",
+        "dark": "/images/ebs_dark.webp",
         "alt": "Oracle EBS"
       },
       {

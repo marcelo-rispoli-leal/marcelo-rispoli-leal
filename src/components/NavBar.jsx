@@ -1,8 +1,8 @@
 // NavBar dependencies
-import { IoMailOutline, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import IconLink from "./IconLink";
 import ToggleTheme from "./ToggleTheme";
 import ToggleLanguage from "./ToggleLanguage";
+import { IoMailOutline, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 // Constants from .env to set the NavBar IconLinks
 const { VITE_EMAIL, VITE_GITHUB, VITE_LINKEDIN } = import.meta.env;
 // Classes for the NavBar IconLinks

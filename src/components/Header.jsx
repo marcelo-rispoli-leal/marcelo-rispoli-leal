@@ -5,7 +5,7 @@ export default function Header({ legend }) {
       <div className="relative mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
         <div className="text-center">
           <img
-            src="./marcelo.png"
+            src="./marcelo.webp"
             alt="MRL"
             className="m-auto flex h-32 w-32 rounded-full bg-white/20 text-4xl font-bold backdrop-blur-sm"
           />

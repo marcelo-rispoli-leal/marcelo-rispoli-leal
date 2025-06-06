@@ -56,7 +56,7 @@ function Experience({ experience }) {
         <ul className="space-y-2">
           {activities.map((activity, actIndex) => (
             <li key={actIndex} className="flex items-start">
-              <span className="mt-1 mr-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-700 dark:bg-teal-300"></span>
+              <span className="mt-1 mr-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-700 dark:bg-teal-300" />
               <span className="text-teal-950 dark:text-teal-50">
                 {activity}
               </span>
