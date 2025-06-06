@@ -76,9 +76,11 @@
           "company": "Vonpar Refrescos S/A (Coca-Cola)",
           "period": "Nov/2000 - Dec/2003",
           "activities": [
-            "Federal and state tax assessment for subsidiaries (IPI, ICMS, PIS/COFINS)",
-            "Operation of SAP R/3 system modules related to controlling and tax processes",
-            "Tax invoice issuance"
+            "Tax assessment (IPI, ICMS, ICMS-ST, PIS, COFINS, INSS, IRRF, and ISSQN)",
+            "Verification of incoming tax documents from company units",
+            "Tax accounting reconciliation",
+            "Creation of accounting entries, purchase orders, and tax ledgers within SAP R/3",
+            "Employee training"
           ]
         }
       ]

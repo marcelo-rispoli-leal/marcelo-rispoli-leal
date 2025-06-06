@@ -44,7 +44,8 @@
         "alt": "Paquetá"
       },
       {
-        "src": "/images/procergs.webp",
+        "src": "/images/procergs_light.webp",
+        "dark": "/images/procergs_dark.webp",
         "alt": "Procergs"
       },
       {
@@ -74,7 +75,7 @@
     ]
   },
   "languages": {
-    "title": "Linguagens de Programação",
+    "pt": "Linguagens de Programação",
     "en": "Programming Languages",
     "es": "Lenguajes de Programación",
     "icon": "IoCodeSlash",
@@ -120,10 +121,10 @@
     ]
   },
   "aws": {
-    "title": "Recursos AWS",
+    "pt": "Recursos AWS",
     "en": "AWS Resources",
     "es": "Recursos AWS",
-    "icon": "IoLogoAmazon",
+    "icon": "IoCloudOutline",
     "columns": 3,
     "rows": 2,
     "content": [
@@ -154,7 +155,7 @@
     ]
   },
   "tools": {
-    "title": "Ferramentas & Frameworks",
+    "pt": "Ferramentas & Frameworks",
     "en": "Tools & Frameworks",
     "es": "Herramientas y Frameworks",
     "icon": "IoConstructOutline",
@@ -200,7 +201,7 @@
     ]
   },
   "databases": {
-    "title": "Bancos de Dados",
+    "pt": "Bancos de Dados",
     "en": "Databases",
     "es": "Bases de Datos",
     "icon": "IoServerOutline",
@@ -226,8 +227,8 @@
     ]
   },
   "systems": {
-    "pt": "Enterprise Systems",
-    "en": "IoDesktopOutline",
+    "pt": "Sistemas Corporativos",
+    "en": "Enterprise Systems",
     "es": "Sistemas Corporativos",
     "icon": "IoDesktopOutline",
     "columns": 2,

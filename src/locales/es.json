@@ -76,9 +76,11 @@
           "company": "Vonpar Refrescos S/A (Coca-Cola)",
           "period": "Nov/2000 - Dic/2003",
           "activities": [
-            "Liquidación de tributos federales y estatales de sucursales (IPI, ICMS, PIS/COFINS)",
-            "Operación de módulos del sistema SAP R/3 relacionados a contraloría y procesos fiscales",
-            "Emisión de facturas fiscales"
+            "Determinación de impuestos (IPI, ICMS, ICMS-ST, PIS, COFINS, INSS, IRRF e ISSQN)",
+            "Verificación de facturas de entrada de unidades de la empresa",
+            "Conciliación contable fiscal",
+            "Creación de asientos contables, órdenes de compra y libros fiscales en SAP R/3",
+            "Capacitación de personal"
           ]
         }
       ]
