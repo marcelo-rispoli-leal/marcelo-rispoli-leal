@@ -2,7 +2,35 @@
   "lang": "pt",
   "collections": {
     "header": {
-      "legend": "Especialista em Sistemas Fiscais & Integração de Dados Corporativos"
+      "legend": "Especialista em Sistemas Fiscais & Integração de Dados Corporativos",
+      "city": {
+        "icon": "IoLocationOutline",
+        "text": "Lajeado/RS (Trabalho Remoto)"
+      },
+      "age": {
+        "icon": "IoHourglassOutline",
+        "birth": "1980-02-04",
+        "text": "anos"
+      },
+      "phone": {
+        "icon": "IoCallOutline",
+        "text": "+55 51 99332-8712"
+      },
+      "email": {
+        "icon": "IoMailOutline",
+        "text": "marcelorispoli@gmail.com",
+        "prefix": "mailto:"
+      },
+      "linkedin": {
+        "icon": "IoLogoLinkedin",
+        "text": "linkedin.com/in/marcelo-rispoli-leal/",
+        "prefix": "https://www."
+      },
+      "github": {
+        "icon": "IoLogoGithub",
+        "text": "github.com/marcelo-rispoli-leal",
+        "prefix": "https://"
+      }
     },
     "schools": {
       "title": "Formação Acadêmica",

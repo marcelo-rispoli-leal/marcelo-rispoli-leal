@@ -68,69 +68,6 @@ function Experience({ experience }) {
   );
 }
 
-/* export default function Experiences() {
-  const [experiences, setExperiences] = useState([]);
-  const [sectionTitle, setSectionTitle] = useState(""); // Novo estado para o título
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const { language } = useThemeContext();
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
-
-  useEffect(() => {
-    const fetchExperiences = async () => {
-      try {
-        // Adicionar '/api' antes de '/graduations'
-        const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/api/experiences?lang=${language}`,
-        );
-        if (!response.ok) throw new Error("Network response was not ok");
-        const { content, title } = await response.json(); // 'title' aqui é o título da seção
-        setExperiences(content);
-        setSectionTitle(title); // Definir o título da seção
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-      }
-    };
-    fetchExperiences();
-  }, [apiBaseUrl, language]);
-
-  if (loading) {
-    return (
-      <section className="pt-16">
-        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
-          <p className="text-xl text-neutral-700 dark:text-neutral-300">
-            Loading professional experiences...
-          </p>
-        </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section className="pt-16">
-        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
-          <p className="text-xl text-red-600 dark:text-red-400">
-            Error loading experiences: {error}
-          </p>
-        </div>
-      </section>
-    );
-  }
-
-  if (experiences.length === 0) {
-    return (
-      <section className="pt-16">
-        <div className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
-          <p className="text-xl text-neutral-700 dark:text-neutral-300">
-            No professional experiences found.
-          </p>
-        </div>
-      </section>
-    );
-  } */
 export default function Experiences({ title, content }) {
   return (
     <section className="pt-16">

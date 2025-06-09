@@ -3,21 +3,19 @@ import IconLink from "./IconLink";
 import ToggleTheme from "./ToggleTheme";
 import ToggleLanguage from "./ToggleLanguage";
 import { IoMailOutline, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-// Constants from .env to set the NavBar IconLinks
-const { VITE_EMAIL, VITE_GITHUB, VITE_LINKEDIN } = import.meta.env;
 // Classes for the NavBar IconLinks
 const iconClasses = "h-full w-full";
 // prettier-ignore
 // Export the NavBar for import into the App
-export default function NavBar() {
+export default function NavBar({email, linkedin, github}) {
   return (
     <div
       role="navigation"
       className="3xl:h-[60px] 4xl:h-[72px] 3xl:gap-x-[10px] 4xl:gap-x-[12px] inline-flex h-[48px] w-full justify-end gap-x-[8px]"
     >
-      {VITE_EMAIL && (<IconLink icon={<IoMailOutline className={iconClasses} />} link={`mailto:${VITE_EMAIL}`} />)}
-      {VITE_GITHUB && (<IconLink icon={<IoLogoGithub className={iconClasses} />} link={VITE_GITHUB} />)}
-      {VITE_LINKEDIN && (<IconLink icon={<IoLogoLinkedin className={iconClasses} />} link={VITE_LINKEDIN} />)}
+      <IconLink icon={<IoMailOutline className={iconClasses} />} link={`${email.prefix}${email.text}`} />
+      <IconLink icon={<IoLogoLinkedin className={iconClasses} />} link={`${linkedin.prefix}${linkedin.text}`} />
+      <IconLink icon={<IoLogoGithub className={iconClasses} />} link={`${github.prefix}${github.text}`} />
       <ToggleTheme />
       <ToggleLanguage />
     </div>

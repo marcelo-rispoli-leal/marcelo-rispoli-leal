@@ -55,10 +55,10 @@ export default function Carousel() {
 
         <div className="relative">
           {/* Container with fixed aspect ratio */}
-          <div className="relative w-full pb-[56.25%]">
+          <div className="relative w-full pb-[30%]">
             {/* Grid for images */}
             <div
-              className={`absolute inset-0 grid gap-4 sm:gap-6 md:gap-8`}
+              className={`absolute inset-0 grid gap-8 px-4`}
               style={{
                 gridTemplateColumns: `repeat(${currentSlide.columns}, minmax(0, 1fr))`,
                 gridTemplateRows: `repeat(${currentSlide.rows}, minmax(0, 1fr))`,
@@ -67,7 +67,7 @@ export default function Carousel() {
               {currentSlide.content.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center justify-center p-2 md:p-4"
+                  className="flex flex-col items-center justify-center"
                 >
                   <img
                     src={isDarkTheme && item.dark ? item.dark : item.src}
@@ -75,7 +75,7 @@ export default function Carousel() {
                     className="h-full w-full object-contain"
                   />
                   {item.label && (
-                    <p className="mt-[-38px] text-center text-2xl font-semibold text-neutral-50">
+                    <p className="mt-[-24px] text-center font-semibold text-neutral-50">
                       {item.label}
                     </p>
                   )}

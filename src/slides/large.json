@@ -46,13 +46,13 @@
         "alt": "Paquetá"
       },
       {
+        "src": "/images/tap.webp",
+        "alt": "TAP"
+      },
+      {
         "src": "/images/procergs_light.webp",
         "dark": "/images/procergs_dark.webp",
         "alt": "Procergs"
-      },
-      {
-        "src": "/images/tap.webp",
-        "alt": "TAP"
       },
       {
         "src": "/images/bettanin.webp",

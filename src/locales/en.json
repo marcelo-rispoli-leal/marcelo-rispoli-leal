@@ -2,7 +2,35 @@
   "lang": "en",
   "collections": {
     "header": {
-      "legend": "Tax Systems & Corporate Data Integration Specialist"
+      "legend": "Tax Systems & Corporate Data Integration Specialist",
+      "city": {
+        "icon": "IoLocationOutline",
+        "text": "Lajeado/RS (Trabalho Remoto)"
+      },
+      "age": {
+        "icon": "IoHourglassOutline",
+        "birth": "1980-04-02",
+        "text": "years"
+      },
+      "phone": {
+        "icon": "IoCallOutline",
+        "text": "+55 51 99332-8712"
+      },
+      "email": {
+        "icon": "IoMailOutline",
+        "text": "marcelorispoli@gmail.com",
+        "link": "mailto:marcelorispoli@gmail.com"
+      },
+      "linkedin": {
+        "icon": "IoLogoLinkedin",
+        "text": "linkedin.com/in/marcelorispoli/",
+        "link": "https://www.linkedin.com/in/marcelo-rispoli-leal"
+      },
+      "github": {
+        "icon": "IoLogoGithub",
+        "text": "github.com/marcelo-rispoli-leal",
+        "link": "https://github.com/marcelo-rispoli-leal"
+      }
     },
     "schools": {
       "title": "Academic Background",

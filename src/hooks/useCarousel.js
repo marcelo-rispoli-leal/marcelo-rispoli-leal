@@ -27,7 +27,7 @@ export function useCarousel() {
   useEffect(() => {
     let timer;
     if (isPlaying) {
-      timer = setTimeout(nextSlide, 7000);
+      timer = setTimeout(nextSlide, 5000);
     }
     return () => clearTimeout(timer);
   }, [currentSlideIndex, totalSlides, isPlaying]);
