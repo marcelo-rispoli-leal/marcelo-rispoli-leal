@@ -16,7 +16,7 @@ export default function Footer({ complement, closing }) {
           {complement}
         </span>
       </div>
-      <p className="mt-2 inline-flex text-xs opacity-75">
+      <p className="mt-2 inline-flex items-end text-xs opacity-75">
         {closing}
         <IoCafe className="ml-[4px]" />
       </p>
