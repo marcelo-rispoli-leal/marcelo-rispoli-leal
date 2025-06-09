@@ -13,20 +13,23 @@
         "alt": "Amazon"
       },
       {
-        "src": "/images/azul.webp",
+        "src": "/images/azul_light.webp",
+        "dark": "/images/azul_dark.webp",
         "alt": "Azul"
       },
       {
-        "src": "/images/exterran.webp",
-        "alt": "Exterran"
+        "src": "/images/fgv_light.webp",
+        "dark": "/images/fgv_dark.webp",
+        "alt": "FGV"
       },
       {
         "src": "/images/dufry.webp",
         "alt": "Dufry"
       },
       {
-        "src": "/images/fgv.webp",
-        "alt": "FGV"
+        "src": "/images/exterran_light.webp",
+        "dark": "/images/exterran_dark.webp",
+        "alt": "Exterran"
       },
       {
         "src": "/images/philips.webp",

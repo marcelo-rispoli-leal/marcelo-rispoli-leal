@@ -2,7 +2,29 @@
   "lang": "es",
   "collections": {
     "header": {
-      "legend": "Especialista en Sistemas Fiscales e Integración de Datos Corporativos"
+      "image": {
+        "src": "./images/marcelo.webp",
+        "alt": "MRL"
+      },
+      "legend": "Especialista en Sistemas Fiscales e Integración de Datos Corporativos",
+      "person": {
+        "birth": "1980-02-04",
+        "text": "años, casado"
+      },
+      "city": "Lajeado/RS (trabalho remoto)",
+      "phone": "+55 51 99332-8712",
+      "email": {
+        "prefix": "mailto:",
+        "text": "marcelorispoli@gmail.com"
+      },
+      "linkedin": {
+        "prefix": "https://www.",
+        "text": "linkedin.com/in/marcelo-rispoli-leal"
+      },
+      "github": {
+        "prefix": "https://",
+        "text": "github.com/marcelo-rispoli-leal"
+      }
     },
     "schools": {
       "title": "Formación Académica",

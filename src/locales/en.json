@@ -2,34 +2,28 @@
   "lang": "en",
   "collections": {
     "header": {
+      "image": {
+        "src": "./images/marcelo.webp",
+        "alt": "MRL"
+      },
       "legend": "Tax Systems & Corporate Data Integration Specialist",
-      "city": {
-        "icon": "IoLocationOutline",
-        "text": "Lajeado/RS (Trabalho Remoto)"
+      "person": {
+        "birth": "1980-02-04",
+        "text": "years, married"
       },
-      "age": {
-        "icon": "IoHourglassOutline",
-        "birth": "1980-04-02",
-        "text": "years"
-      },
-      "phone": {
-        "icon": "IoCallOutline",
-        "text": "+55 51 99332-8712"
-      },
+      "city": "Lajeado/RS (remote work)",
+      "phone": "+55 51 99332-8712",
       "email": {
-        "icon": "IoMailOutline",
-        "text": "marcelorispoli@gmail.com",
-        "link": "mailto:marcelorispoli@gmail.com"
+        "prefix": "mailto:",
+        "text": "marcelorispoli@gmail.com"
       },
       "linkedin": {
-        "icon": "IoLogoLinkedin",
-        "text": "linkedin.com/in/marcelorispoli/",
-        "link": "https://www.linkedin.com/in/marcelo-rispoli-leal"
+        "prefix": "https://www.",
+        "text": "linkedin.com/in/marcelo-rispoli-leal"
       },
       "github": {
-        "icon": "IoLogoGithub",
-        "text": "github.com/marcelo-rispoli-leal",
-        "link": "https://github.com/marcelo-rispoli-leal"
+        "prefix": "https://",
+        "text": "github.com/marcelo-rispoli-leal"
       }
     },
     "schools": {
