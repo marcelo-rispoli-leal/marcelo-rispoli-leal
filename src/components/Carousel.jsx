@@ -42,20 +42,16 @@ export default function Carousel() {
   const IconComponent = iconMap[currentSlide.icon];
 
   return (
-    <section className="bg-teal-100/80 py-8 dark:bg-teal-900/20">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-12 flex h-10 items-center justify-center text-center">
-          {IconComponent && (
-            <IconComponent className="mr-4 h-9 w-9 pt-1 text-teal-700 dark:text-teal-300" />
-          )}
-          <h2 className="text-4xl leading-none font-bold text-teal-700 underline dark:text-teal-300">
-            {title}
-          </h2>
-        </div>
+    <section className="rounded-3xl bg-teal-100/80 py-8 dark:bg-teal-900/20">
+      <div className="px-6">
+        <h2 className="mb-12 text-2xl text-teal-700 underline md:text-3xl xl:text-4xl dark:text-teal-300">
+          <IconComponent className="mr-1" />
+          {title}
+        </h2>
 
         <div className="relative">
           {/* Container with fixed aspect ratio */}
-          <div className="relative w-full pb-[30%]">
+          <div className="w-full pb-[30%]">
             {/* Grid for images */}
             <div
               className={`absolute inset-0 grid gap-8 px-4`}

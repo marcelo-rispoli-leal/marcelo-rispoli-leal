@@ -44,7 +44,7 @@ export default function App() {
       {/* Main Content */}
       <main className="pt-20">
         <Header content={header} />
-        <div className="mx-auto max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
+        <div className="mx-auto mt-16 max-w-96/100 px-6 sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
           <Carousel />
           <Graduations title={schools.title} content={schools.content} />
           <Experiences title={works.title} content={works.content} />

@@ -25,11 +25,11 @@ export default function Header({ content }) {
           alt={image.alt}
           className="m-auto h-32 w-32 rounded-full"
         />
-        <h1 className="mt-8 mb-4 text-5xl font-bold md:text-[64px]">
+        <h1 className="md:text[48px] mt-8 mb-4 text-3xl font-bold sm:text-[36px] md:text-[48px] xl:text-[64px]">
           {document.title}
         </h1>
-        <p className="mb-16 text-xl md:text-2xl">{legend}</p>
-        <div className="grid grid-cols-3 grid-rows-2 justify-items-center gap-4 text-xl leading-none">
+        <p className="mb-16 text-lg sm:text-xl md:text-2xl">{legend}</p>
+        <div className="grid grid-cols-1 grid-rows-6 justify-items-center gap-4 leading-none md:grid-cols-2 md:grid-rows-3 md:text-lg xl:grid-cols-3 xl:grid-rows-2 xl:text-xl">
           <span className="inline-flex">
             <IoPerson className="mr-1" />
             {Age() + " " + person.text}

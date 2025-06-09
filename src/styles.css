@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -9,4 +9,13 @@
   --breakpoint-xm: 56rem;
   --breakpoint-3xl: 128rem;
   --breakpoint-4xl: 160rem;
+}
+
+h2 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1;
 }
