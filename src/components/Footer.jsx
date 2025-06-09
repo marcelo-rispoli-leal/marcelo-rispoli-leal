@@ -7,14 +7,19 @@ function getYear() {
 
 export default function Footer({ complement, closing }) {
   return (
-    <>
-      <p className="text-sm">
-        © {getYear()} {document.title}. {complement}
-      </p>
-      <p className="mt-2 inline-flex items-end text-xs opacity-75">
+    <div>
+      <div className="grid grid-rows-2 text-sm md:grid-cols-2 md:grid-rows-1">
+        <span className="md:mr-[2px] md:inline-flex md:justify-end">
+          © {getYear()} {document.title}.
+        </span>
+        <span className="md:ml-[2px] md:inline-flex md:justify-start">
+          {complement}
+        </span>
+      </div>
+      <p className="mt-2 inline-flex text-xs opacity-75">
         {closing}
-        <IoCafe className="ml-0.75 text-sm" />
+        <IoCafe className="ml-[4px]" />
       </p>
-    </>
+    </div>
   );
 }
