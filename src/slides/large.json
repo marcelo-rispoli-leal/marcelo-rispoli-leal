@@ -13,23 +13,23 @@
         "alt": "Amazon"
       },
       {
+        "src": "/images/dufry.webp",
+        "alt": "Dufry"
+      },
+      {
         "src": "/images/azul_light.webp",
         "dark": "/images/azul_dark.webp",
         "alt": "Azul"
       },
       {
-        "src": "/images/fgv_light.webp",
-        "dark": "/images/fgv_dark.webp",
-        "alt": "FGV"
-      },
-      {
-        "src": "/images/dufry.webp",
-        "alt": "Dufry"
-      },
-      {
         "src": "/images/exterran_light.webp",
         "dark": "/images/exterran_dark.webp",
         "alt": "Exterran"
+      },
+      {
+        "src": "/images/fgv_light.webp",
+        "dark": "/images/fgv_dark.webp",
+        "alt": "FGV"
       },
       {
         "src": "/images/philips.webp",
@@ -62,17 +62,17 @@
         "alt": "Bettanin"
       },
       {
-        "src": "/images/dell.webp",
-        "alt": "Dell"
+        "src": "/images/dorf_light.webp",
+        "dark": "/images/dorf_dark.webp",
+        "alt": "Dorf Ketal"
       },
       {
         "src": "/images/dana.webp",
         "alt": "Dana"
       },
       {
-        "src": "/images/dorf_light.webp",
-        "dark": "/images/dorf_dark.webp",
-        "alt": "Dorf Ketal"
+        "src": "/images/dell.webp",
+        "alt": "Dell"
       },
       {
         "src": "/images/vonpar.webp",
