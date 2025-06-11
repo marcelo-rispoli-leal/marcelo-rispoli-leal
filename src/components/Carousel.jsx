@@ -42,18 +42,18 @@ export default function Carousel() {
   const IconComponent = iconMap[currentSlide.icon];
 
   return (
-    <section className="rounded-3xl bg-teal-100/80 py-6 md:py-16 dark:bg-teal-900/20">
-      <h2 className="mb-4 text-xl text-teal-700 underline md:mb-12 md:text-2xl xl:text-3xl dark:text-teal-300">
+    <section className="rounded-3xl bg-teal-100/80 py-6 md:py-12 dark:bg-teal-900/20">
+      <h2 className="mb-4 text-xl text-teal-700 underline md:mb-8 md:text-2xl xl:text-3xl dark:text-teal-300">
         <IconComponent className="mr-1" />
         {title}
       </h2>
       <div className="px-4 md:px-8">
         <div className="relative">
           {/* Container with fixed aspect ratio */}
-          <div className="w-full pb-[80%] md:pb-[30%]">
+          <div className="w-full pb-[60%] md:pb-[30%]">
             {/* Grid for images */}
             <div
-              className={`absolute inset-0 grid gap-3 px-2 md:gap-8 md:px-4`}
+              className={`absolute inset-0 grid gap-4 px-2 md:gap-8 md:px-4`}
               style={{
                 gridTemplateColumns: `repeat(${currentSlide.columns}, minmax(0, 1fr))`,
                 gridTemplateRows: `repeat(${currentSlide.rows}, minmax(0, 1fr))`,
@@ -92,13 +92,13 @@ export default function Carousel() {
         </div>
 
         {/* Slides indicators (dots) */}
-        <div className="mt-6 flex flex-col items-center justify-center space-y-4 md:mt-8">
+        <div className="mt-4 flex flex-col items-center justify-center space-y-4 md:mt-8">
           <div className="flex justify-center space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlideIndex(index)}
-                className={`h-2 w-2 rounded-full transition-colors md:h-3 md:w-3 ${
+                className={`h-2 w-2 rounded-full transition-colors md:h-4 md:w-4 ${
                   index === currentSlideIndex
                     ? "bg-teal-700 dark:bg-teal-300"
                     : "bg-neutral-500 hover:bg-neutral-600 dark:hover:bg-neutral-400"
