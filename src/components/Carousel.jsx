@@ -66,14 +66,9 @@ export default function Carousel() {
                 >
                   <img
                     src={isDarkTheme && item.dark ? item.dark : item.src}
-                    alt={item.alt || item.label}
+                    alt={item.alt}
                     className="h-full w-full object-contain"
                   />
-                  {item.label && (
-                    <p className="mt-[-24px] text-center font-semibold text-neutral-50">
-                      {item.label}
-                    </p>
-                  )}
                 </div>
               ))}
             </div>

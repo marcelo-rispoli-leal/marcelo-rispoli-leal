@@ -1,8 +1,8 @@
 {
   "companies": {
-    "pt": "Experiência Profissional",
-    "en": "Professional Experience",
-    "es": "Experiencia Profesional",
+    "pt": "Principais Clientes",
+    "en": "Main Customers",
+    "es": "Principales Clientes",
     "icon": "IoIdCardOutline",
     "columns": 4,
     "rows": 4,
@@ -71,12 +71,13 @@
         "alt": "Dana"
       },
       {
-        "src": "/images/dell.webp",
-        "alt": "Dell"
+        "src": "/images/agrofel_light.webp",
+        "dark": "/images/agrofel_dark.webp",
+        "alt": "Agrofel"
       },
       {
-        "src": "/images/vonpar.webp",
-        "alt": "Vonpar"
+        "src": "/images/dell.webp",
+        "alt": "Dell"
       }
     ]
   },
@@ -140,27 +141,27 @@
     "content": [
       {
         "src": "/images/quicksight.webp",
-        "label": "QuickSight"
+        "alt": "QuickSight"
       },
       {
         "src": "/images/glue.webp",
-        "label": "Glue"
+        "alt": "Glue"
       },
       {
         "src": "/images/redshift.webp",
-        "label": "Redshift"
+        "alt": "Redshift"
       },
       {
         "src": "/images/athena.webp",
-        "label": "Athena"
+        "alt": "Athena"
       },
       {
         "src": "/images/s3.webp",
-        "label": "S3"
+        "alt": "S3"
       },
       {
         "src": "/images/stepfunctions.webp",
-        "label": "StepFunctions"
+        "alt": "StepFunctions"
       }
     ]
   },
