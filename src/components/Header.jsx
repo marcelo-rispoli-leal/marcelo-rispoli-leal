@@ -24,23 +24,29 @@ export default function Header({ content }) {
     >
       <div
         id="header"
-        className="mx-auto max-w-96/100 px-6 text-center sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5"
+        className="mx-auto max-w-96/100 px-[12px] text-center sm:max-w-9/10 md:max-w-86/100 md:px-[16px] xl:px-[24px] 2xl:max-w-4/5"
       >
         <img
           id="photo"
           src={image.src}
           alt={image.alt}
-          className="m-auto h-32 w-32 rounded-full"
+          className="m-auto h-[128px] w-[128px] rounded-full"
         />
-        <h1 className="mt-8 mb-4 text-[32px] font-bold md:text-[48px] xl:text-[64px]">
+        <h1 className="mt-[32px] mb-[16px] text-[32px] font-bold md:text-[48px] xl:text-[64px]">
           {document.title}
         </h1>
-        <p id="legend" className="mb-16 text-lg sm:text-xl md:text-2xl">
+        <p
+          id="legend"
+          className="mb-[48px] text-[18px] sm:text-[20px] md:text-[24px]"
+        >
           {legend}
+        </p>
+        <p id="site" className="mb-[32px] hidden text-[20px]">
+          {document.URL}
         </p>
         <div
           id="contact"
-          className="grid grid-cols-1 grid-rows-6 justify-items-center gap-1 sm:grid-cols-2 sm:grid-rows-3 md:text-[18px] xl:grid-cols-3 xl:grid-rows-2 xl:gap-4 xl:text-[20px]"
+          className="grid grid-cols-1 grid-rows-6 justify-items-center gap-[6px] sm:grid-cols-2 sm:grid-rows-3 sm:gap-[8px] md:text-[18px] xl:grid-cols-3 xl:grid-rows-2 xl:text-[20px]"
         >
           <span className="inline-flex">
             <IoPerson className="mr-1" />

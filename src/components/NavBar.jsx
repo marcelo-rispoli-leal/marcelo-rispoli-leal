@@ -17,7 +17,7 @@ export default function NavBar({ email, linkedin, github }) {
     window.print();
   };
   return (
-    <div className="3xl:h-[60px] 4xl:h-[72px] inline-flex h-[40px] w-full sm:h-[48px] md:grid md:grid-cols-2 md:justify-stretch">
+    <div className="3xl:h-[60px] 4xl:h-[72px] inline-flex h-[48px] w-full md:grid md:grid-cols-2 md:justify-stretch">
       <div className="hidden md:inline-flex md:justify-start md:text-[48px] md:font-semibold">
         {document.title}
       </div>
@@ -27,7 +27,7 @@ export default function NavBar({ email, linkedin, github }) {
       >
         <button
           onClick={handlePrint}
-          className="b-std aspect-square h-full rounded-[12px] bg-neutral-300 p-2 transition-colors hover:bg-teal-700 dark:bg-neutral-700 dark:text-neutral-100 dark:hover:bg-teal-500"
+          className="b-std aspect-square h-full rounded-[12px] bg-neutral-300 p-[8px] transition-colors hover:bg-teal-700 dark:bg-neutral-700 dark:text-neutral-100 dark:hover:bg-teal-500"
           aria-label="Print page"
         >
           <IoPrintOutline className={iconClasses} />
