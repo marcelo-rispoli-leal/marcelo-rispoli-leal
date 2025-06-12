@@ -8,7 +8,7 @@ import {
   IoGlobe,
 } from "react-icons/io5";
 
-export default function Header({ content }) {
+export default function Header({ content, h1Ref }) {
   const { image, legend, person, city, phone, email, linkedin, github } =
     content;
 
@@ -33,7 +33,10 @@ export default function Header({ content }) {
           alt={image.alt}
           className="m-auto h-[128px] w-[128px] rounded-full"
         />
-        <h1 className="mt-[32px] mb-[16px] text-[32px] font-bold md:text-[48px] xl:text-[64px]">
+        <h1
+          ref={h1Ref}
+          className="mt-[32px] mb-[16px] text-[32px] font-bold md:text-[48px] xl:text-[64px]"
+        >
           {document.title}
         </h1>
         <p

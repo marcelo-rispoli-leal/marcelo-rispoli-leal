@@ -7,12 +7,33 @@ import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Highlights from "./Highlights";
 import Footer from "./Footer";
-import { useContext } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import { AppContext } from "../hooks/useAppContext";
 import { IoSync } from "react-icons/io5";
 
 export default function App() {
+  const [isH1Visible, setIsH1Visible] = useState(true);
+  const h1Ref = useRef(null);
   const { collections } = useContext(AppContext);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsH1Visible(entry.isIntersecting);
+      },
+      { threshold: 0.95 },
+    );
+
+    if (h1Ref.current) {
+      observer.observe(h1Ref.current);
+    }
+
+    return () => {
+      if (h1Ref.current) {
+        observer.unobserve(h1Ref.current);
+      }
+    };
+  }, [collections]);
 
   if (!collections) {
     return (
@@ -40,13 +61,14 @@ export default function App() {
             email={header.email}
             linkedin={header.linkedin}
             github={header.github}
+            isH1Visible={isH1Visible}
           />
         </div>
       </header>
 
       {/* Main Content */}
       <main className="pt-20">
-        <Header content={header} />
+        <Header content={header} h1Ref={h1Ref} />
         <div
           id="sections"
           className="mx-auto mt-16 max-w-96/100 px-3 sm:max-w-9/10 sm:px-4 md:max-w-86/100 md:px-6 2xl:max-w-4/5"

@@ -12,13 +12,17 @@ import {
 const iconClasses = "h-full w-full"; // prettier-ignore
 
 // Export the NavBar for import into the App
-export default function NavBar({ email, linkedin, github }) {
+export default function NavBar({ email, linkedin, github, isH1Visible }) {
   const handlePrint = () => {
     window.print();
   };
   return (
-    <div className="3xl:h-[60px] 4xl:h-[72px] inline-flex h-[48px] w-full md:grid md:grid-cols-2 md:justify-stretch">
-      <div className="hidden md:inline-flex md:justify-start md:text-[48px] md:font-semibold">
+    <div
+      className={`3xl:h-[60px] 4xl:h-[72px] inline-flex h-[48px] w-full ${!isH1Visible && "md:grid md:grid-cols-2 md:justify-stretch"}`}
+    >
+      <div
+        className={`md:justify-start md:text-[48px] md:font-bold ${!isH1Visible && "md:inline-flex"} hidden`}
+      >
         {document.title}
       </div>
       <div
