@@ -20,8 +20,8 @@ const iconMap = {
 
 export default function Skills({ title, content }) {
   return (
-    <section className="pt-16">
-      <div className="break-after-page" />
+    <section id="skills" className="break-before-page pt-16">
+      {/* <div className="break-before-page"> */}
       <h2 className="mb-12 text-2xl text-teal-700 md:text-3xl xl:text-4xl dark:text-teal-300">
         <IoColorWandOutline className="mr-1" />
         {title}
@@ -56,6 +56,7 @@ export default function Skills({ title, content }) {
           );
         })}
       </div>
+      {/* </div> */}
     </section>
   );
 }

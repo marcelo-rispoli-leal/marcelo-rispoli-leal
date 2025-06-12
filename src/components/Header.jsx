@@ -5,6 +5,7 @@ import {
   IoMail,
   IoLogoLinkedin,
   IoLogoGithub,
+  IoGlobe,
 } from "react-icons/io5";
 
 export default function Header({ content }) {
@@ -41,9 +42,14 @@ export default function Header({ content }) {
         >
           {legend}
         </p>
-        <p id="site" className="mb-[32px] hidden text-[20px]">
-          {document.URL}
-        </p>
+        <a
+          id="site"
+          href={document.URL}
+          className="mb-[32px] hidden text-[20px] underline"
+        >
+          <IoGlobe className="mr-1" />
+          {document.documentURI}
+        </a>
         <div
           id="contact"
           className="grid grid-cols-1 grid-rows-6 justify-items-center gap-[6px] sm:grid-cols-2 sm:grid-rows-3 sm:gap-[8px] md:text-[18px] xl:grid-cols-3 xl:grid-rows-2 xl:text-[20px]"

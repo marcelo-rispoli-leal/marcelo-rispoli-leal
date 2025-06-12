@@ -20,8 +20,7 @@ const iconMap = {
 
 export default function Highlights({ title, content }) {
   return (
-    <section className="py-16">
-      <div className="break-after-page" />
+    <section id="highlights" className="break-before-page py-16">
       <h2 className="mb-12 text-2xl text-teal-700 md:text-3xl xl:text-4xl dark:text-teal-300">
         <IoStarOutline className="mr-1" />
         {title}
