@@ -34,7 +34,7 @@ export default function App() {
       className="min-h-[100svh] w-full bg-neutral-100 font-sans leading-none text-neutral-900 transition-colors dark:bg-neutral-900 dark:text-neutral-100"
     >
       {/* Header */}
-      <header className="fixed top-0 z-50 w-full bg-neutral-200 py-4 dark:bg-neutral-800">
+      <header className="fixed top-0 z-50 w-full bg-neutral-200 py-[16px] dark:bg-neutral-800">
         <div className="mx-auto max-w-96/100 px-6 leading-none sm:max-w-9/10 md:max-w-86/100 2xl:max-w-4/5">
           <NavBar
             email={header.email}
