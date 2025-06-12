@@ -13,7 +13,7 @@ function Experience({ experience }) {
   } = experience;
 
   return (
-    <div className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 shadow-lg dark:border-teal-300 dark:bg-neutral-700">
+    <div className="rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 dark:border-teal-300 dark:bg-neutral-700">
       <div className="mb-4 flex flex-col justify-between md:flex-row md:items-start">
         <div>
           <h3 className="font-bold text-teal-800 md:text-lg xl:text-xl dark:text-teal-200">

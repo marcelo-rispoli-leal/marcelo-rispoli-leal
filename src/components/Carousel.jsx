@@ -42,7 +42,10 @@ export default function Carousel() {
   const IconComponent = iconMap[currentSlide.icon];
 
   return (
-    <section className="rounded-3xl bg-teal-100/80 py-6 md:py-12 dark:bg-teal-900/20">
+    <section
+      id="carousel"
+      className="rounded-3xl bg-teal-100/80 py-6 md:py-12 dark:bg-teal-900/20"
+    >
       <h2 className="mb-4 text-xl text-teal-700 underline md:mb-8 md:text-2xl xl:text-3xl dark:text-teal-300">
         <IconComponent className="mr-1" />
         {title}
