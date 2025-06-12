@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import slidesData from "../slides/large.json";
 import { useAppContext } from "./useAppContext";
+import slidesData from "../slides/large.json";
 
 export function useCarousel() {
   const { language, isDarkTheme } = useAppContext();

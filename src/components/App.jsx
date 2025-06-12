@@ -7,35 +7,19 @@ import Skills from "./Skills";
 import Certificates from "./Certificates";
 import Highlights from "./Highlights";
 import Footer from "./Footer";
-import { useContext, useState, useEffect, useRef } from "react";
+import useHeaderObserver from "../hooks/useHeaderObserver";
+import { useContext, useState, useRef } from "react";
 import { AppContext } from "../hooks/useAppContext";
 import { IoSync } from "react-icons/io5";
 
 export default function App() {
-  const [isH1Visible, setIsH1Visible] = useState(true);
   const h1Ref = useRef(null);
-  const { collections } = useContext(AppContext);
+  const { sections } = useContext(AppContext);
+  const [isH1Visible, setIsH1Visible] = useState(true);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsH1Visible(entry.isIntersecting);
-      },
-      { threshold: 0.95 },
-    );
+  useHeaderObserver(h1Ref, setIsH1Visible, sections);
 
-    if (h1Ref.current) {
-      observer.observe(h1Ref.current);
-    }
-
-    return () => {
-      if (h1Ref.current) {
-        observer.unobserve(h1Ref.current);
-      }
-    };
-  }, [collections]);
-
-  if (!collections) {
+  if (!sections) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900">
         <IoSync className="mb-4 h-16 w-16 animate-spin text-teal-700" />
@@ -46,8 +30,7 @@ export default function App() {
     );
   }
 
-  const { header, schools, works, skills, titles, highlights, footer } =
-    collections;
+  const { header, schools, works, skills, titles, marks, footer } = sections;
 
   return (
     <div
@@ -78,7 +61,7 @@ export default function App() {
           <Experiences title={works.title} content={works.content} />
           <Skills title={skills.title} content={skills.content} />
           <Certificates title={titles.title} content={titles.content} />
-          <Highlights title={highlights.title} content={highlights.content} />
+          <Highlights title={marks.title} content={marks.content} />
         </div>
       </main>
 

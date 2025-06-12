@@ -1,6 +1,6 @@
 import { IoPrintOutline } from "react-icons/io5";
 
-const PrintButton = ({ iconClasses }) => {
+export default function PrintButton({ iconClasses }) {
   const handlePrint = () => {
     window.print();
   };
@@ -14,6 +14,4 @@ const PrintButton = ({ iconClasses }) => {
       <IoPrintOutline className={iconClasses} />
     </button>
   );
-};
-
-export default PrintButton;
+}

@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "collections": {
+  "sections": {
     "header": {
       "image": {
         "src": "./images/marcelo.webp",
@@ -206,7 +206,7 @@
         }
       ]
     },
-    "highlights": {
+    "marks": {
       "title": "Key Differentials",
       "content": [
         {

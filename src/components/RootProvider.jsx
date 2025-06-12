@@ -4,7 +4,7 @@ import { useLanguageProvider } from "../hooks/useLanguageProvider.js";
 
 export default function RootProvider({ children }) {
   const { isDarkTheme, toggleTheme } = useThemeProvider();
-  const { language, toggleLanguage, collections } = useLanguageProvider();
+  const { language, toggleLanguage, sections } = useLanguageProvider();
 
   return (
     <AppContext.Provider
@@ -13,7 +13,7 @@ export default function RootProvider({ children }) {
         toggleTheme,
         language,
         toggleLanguage,
-        collections,
+        sections,
       }}
     >
       {children}

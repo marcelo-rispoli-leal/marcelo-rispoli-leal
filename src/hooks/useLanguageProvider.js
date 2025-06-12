@@ -6,7 +6,7 @@ export function useLanguageProvider() {
     return savedLanguage || "en";
   });
 
-  const [collections, setCollections] = useState(null);
+  const [sections, setSections] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("language", language);
@@ -14,7 +14,7 @@ export function useLanguageProvider() {
     // Load JSON data based on selected language
     import(`../locales/${language}.json`)
       .then((module) => {
-        setCollections(module.default.collections);
+        setSections(module.default.sections);
       })
       .catch((error) => {
         console.error("Error loading locale data:", error);
@@ -25,5 +25,5 @@ export function useLanguageProvider() {
     setLanguage(lang);
   };
 
-  return { language, toggleLanguage, collections };
+  return { language, toggleLanguage, sections };
 }
