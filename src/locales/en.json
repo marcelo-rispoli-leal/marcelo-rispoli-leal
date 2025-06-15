@@ -1,0 +1,249 @@
+{
+  "lang": "en",
+  "sections": {
+    "header": {
+      "image": {
+        "src": "./images/marcelo.webp",
+        "alt": "MRL"
+      },
+      "legend": "Tax Systems & Corporate Data Integration Specialist",
+      "person": {
+        "birth": "1980-02-04",
+        "text": "years, married"
+      },
+      "city": "Lajeado/RS (remote work)",
+      "phone": "+55 51 99332-8712",
+      "email": {
+        "prefix": "mailto:",
+        "text": "marcelorispoli@gmail.com"
+      },
+      "linkedin": {
+        "prefix": "https://www.",
+        "text": "linkedin.com/in/marcelo-rispoli-leal"
+      },
+      "github": {
+        "prefix": "https://",
+        "text": "github.com/marcelo-rispoli-leal"
+      }
+    },
+    "schools": {
+      "title": "Academic Background",
+      "content": [
+        {
+          "title": "Bachelor's Degree in Accounting Sciences",
+          "institution": "Federal University of Rio Grande do Sul (UFRGS)",
+          "period": "1997 - 2001"
+        },
+        {
+          "title": "Elementary and High School",
+          "institution": "Colégio Anchieta - Porto Alegre/RS",
+          "period": "1986 - 1996"
+        }
+      ]
+    },
+    "works": {
+      "title": "Professional Experience",
+      "content": [
+        {
+          "title": "Synchro Technical-Functional Consultant",
+          "company": "Ninecon Consultores Associados",
+          "period": "Feb/2022 - Mar/2025",
+          "clients": {
+            "label": "Main Customers",
+            "content": "Amazon, Dufry, Azul Airlines, Exterran, FGV"
+          },
+          "highlight": "Key technical participation in tax credit recovery project on assets, developing complex workflows for integration between Synchro, Oracle EBS and AWS ecosystem (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "activities": [
+            "Built integration flows between Oracle EBS, Synchro and S3 using Redshift and Athena",
+            "Implemented QuickSight dashboards for tax and accounting monitoring",
+            "Customized Synchro Open Interfaces for tax process automation",
+            "Technical validation of tax calculation and declaration processes",
+            "Specialized Synchro technical support for large corporations"
+          ]
+        },
+        {
+          "title": "Tasy EMR Developer",
+          "company": "Meta Serviços em Informática",
+          "period": "Jan/2021 - Jan/2022",
+          "clients": {
+            "label": "Main Customer",
+            "content": "Philips Healthcare"
+          },
+          "activities": [
+            "Development of custom reports and functionalities in Tasy EMR system",
+            "Advanced programming in Oracle PL/SQL, JavaScript and Java",
+            "Performance optimization in SQL queries and stored procedures"
+          ]
+        },
+        {
+          "title": "Synchro Technical-Functional Consultant",
+          "company": "Gesif Consultores (Abreu & Damé)",
+          "period": "Jun/2008 - Aug/2013 | Jan/2015 - Jan/2020",
+          "clients": {
+            "label": "Main Customers",
+            "content": "Tramontina, Lojas Benoit, Paquetá Calçados, TAP, Procergs, Bettanin, Dorf Ketal, Dana Albarus, Dell"
+          },
+          "activities": [
+            "Implementation, maintenance and customization of Synchro tax solutions",
+            "Advanced Oracle PL/SQL development (packages, procedures, functions, triggers)",
+            "Configuration and operation of Synchro modules for integration with SAP and Oracle EBS and for Open Interfaces",
+            "Automation of federal and state tax calculation and assessment (ICMS, IPI, PIS, COFINS, IR, CSLL, INSS, ISS)",
+            "Generation and validation of digital tax obligations (EFD ICMS/IPI, EFD Contributions (PIS/COFINS), ECD, ECF, REINF, GIAs)",
+            "Technical documentation and functional manual development",
+            "Technical team training and end-user enablement"
+          ]
+        },
+        {
+          "title": "Tax Accounting Analyst",
+          "company": "Vonpar Refrescos S/A (Coca-Cola)",
+          "period": "Nov/2000 - Dec/2003",
+          "activities": [
+            "Tax assessment (IPI, ICMS, ICMS-ST, PIS, COFINS, INSS, IRRF, and ISSQN)",
+            "Verification of incoming tax documents from company units",
+            "Tax accounting reconciliation",
+            "Creation of accounting entries, purchase orders, and tax ledgers within SAP R/3",
+            "Employee training"
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "content": [
+        {
+          "title": "Programming Languages",
+          "iconName": "IoCodeSlash",
+          "skills": [
+            "Oracle PL/SQL (Advanced)",
+            "HTML5/CSS3",
+            "JavaScript",
+            "Node.js",
+            "Java",
+            "ASP.net/C#",
+            "VBA"
+          ]
+        },
+        {
+          "title": "AWS Resources",
+          "iconName": "IoLogoAmazon",
+          "skills": [
+            "Amazon QuickSight",
+            "AWS Glue",
+            "Amazon Redshift",
+            "Amazon Athena",
+            "Amazon S3",
+            "AWS StepFunctions"
+          ]
+        },
+        {
+          "title": "Tools & Frameworks",
+          "iconName": "IoConstructOutline",
+          "skills": [
+            "VS Code",
+            "React.js",
+            "Tailwind CSS",
+            "Git/GitHub",
+            "Excel (Advanced)",
+            "Postman",
+            "GIMP",
+            "Visual Studio"
+          ]
+        },
+        {
+          "title": "Databases",
+          "iconName": "IoServerOutline",
+          "skills": ["Oracle Database", "SQL Server", "PostgreSQL", "MongoDB"]
+        },
+        {
+          "title": "Enterprise Systems",
+          "iconName": "IoDesktopOutline",
+          "skills": [
+            "Oracle EBS",
+            "SAP R/3",
+            "Tasy EMR",
+            "Synchro Tax Solutions"
+          ]
+        },
+        {
+          "title": "Tax Compliance",
+          "iconName": "IoReceiptOutline",
+          "skills": [
+            "EFD Contributions",
+            "EFD ICMS/IPI",
+            "REINF",
+            "ECD/ECF",
+            "NFe/CTe/NFSe"
+          ]
+        }
+      ]
+    },
+    "titles": {
+      "title": "Certifications",
+      "content": [
+        {
+          "title": "Full Stack Journey",
+          "details": "Hashtag • 2025 • 8h"
+        },
+        {
+          "title": "Full Stack Developer",
+          "details": "IGTI • 2020 • 148h • Perfect Score (500/500)"
+        },
+        {
+          "title": "Scrum Foundation Professional Certificate",
+          "details": "CertiProf • 2020"
+        },
+        {
+          "title": "LinkedIn Skill Badges",
+          "details": "Excel, CSS, JSON, JavaScript, MongoDB"
+        },
+        {
+          "title": "Synchro Technical Certification",
+          "details": "Synchro Sistemas • 2010 • 40h"
+        },
+        {
+          "title": "Synchro Functional Certification",
+          "details": "Synchro Sistemas • 2008 • 88h"
+        }
+      ]
+    },
+    "marks": {
+      "title": "Key Differentials",
+      "content": [
+        {
+          "title": "Corporate Portfolio",
+          "icon": "IoBusinessOutline",
+          "description": "Proven experience in complex projects for large enterprises"
+        },
+        {
+          "title": "Systems Integration",
+          "icon": "IoSync",
+          "description": "Specialist in connectivity between ERPs and tax platforms"
+        },
+        {
+          "title": "Cloud Computing",
+          "icon": "IoCloudOutline",
+          "description": "Hands-on experience with AWS data pipelines and analytics"
+        },
+        {
+          "title": "Tax Expertise",
+          "icon": "IoLibraryOutline",
+          "description": "In-depth knowledge of tax legislation and fiscal compliance"
+        },
+        {
+          "title": "Distributed Collaboration",
+          "icon": "IoStorefrontOutline",
+          "description": "Experienced and adapted to remote work with multidisciplinary teams"
+        },
+        {
+          "title": "English",
+          "icon": "IoLanguage",
+          "description": "Knowledge for technical documentation, coding and communication"
+        }
+      ]
+    },
+    "footer": {
+      "complement": "All rights reserved.",
+      "closing": "Developed with React, Tailwind CSS and lots of "
+    }
+  }
+}

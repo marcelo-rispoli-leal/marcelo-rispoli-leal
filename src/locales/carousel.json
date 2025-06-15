@@ -1,0 +1,275 @@
+{
+  "companies": {
+    "pt": "Principais Clientes",
+    "en": "Main Customers",
+    "es": "Principales Clientes",
+    "icon": "IoIdCardOutline",
+    "columns": 4,
+    "rows": 4,
+    "content": [
+      {
+        "src": "/images/amazon_light.webp",
+        "dark": "/images/amazon_dark.webp",
+        "alt": "Amazon"
+      },
+      {
+        "src": "/images/dufry.webp",
+        "alt": "Dufry"
+      },
+      {
+        "src": "/images/azul_light.webp",
+        "dark": "/images/azul_dark.webp",
+        "alt": "Azul"
+      },
+      {
+        "src": "/images/exterran_light.webp",
+        "dark": "/images/exterran_dark.webp",
+        "alt": "Exterran"
+      },
+      {
+        "src": "/images/fgv_light.webp",
+        "dark": "/images/fgv_dark.webp",
+        "alt": "FGV"
+      },
+      {
+        "src": "/images/philips.webp",
+        "alt": "Philips"
+      },
+      {
+        "src": "/images/tramontina.webp",
+        "alt": "Tramontina"
+      },
+      {
+        "src": "/images/benoit.webp",
+        "alt": "Benoit"
+      },
+      {
+        "src": "/images/paqueta_light.webp",
+        "dark": "/images/paqueta_dark.webp",
+        "alt": "Paquetá"
+      },
+      {
+        "src": "/images/tap.webp",
+        "alt": "TAP"
+      },
+      {
+        "src": "/images/procergs_light.webp",
+        "dark": "/images/procergs_dark.webp",
+        "alt": "Procergs"
+      },
+      {
+        "src": "/images/bettanin.webp",
+        "alt": "Bettanin"
+      },
+      {
+        "src": "/images/dorf_light.webp",
+        "dark": "/images/dorf_dark.webp",
+        "alt": "Dorf Ketal"
+      },
+      {
+        "src": "/images/dana.webp",
+        "alt": "Dana"
+      },
+      {
+        "src": "/images/agrofel_light.webp",
+        "dark": "/images/agrofel_dark.webp",
+        "alt": "Agrofel"
+      },
+      {
+        "src": "/images/dell.webp",
+        "alt": "Dell"
+      }
+    ]
+  },
+  "languages": {
+    "pt": "Linguagens de Programação",
+    "en": "Programming Languages",
+    "es": "Lenguajes de Programación",
+    "icon": "IoCodeSlash",
+    "columns": 3,
+    "rows": 3,
+    "content": [
+      {
+        "src": "/images/plsql.webp",
+        "alt": "Oracle PL/SQL"
+      },
+      {
+        "src": "/images/html_light.webp",
+        "dark": "/images/html_dark.webp",
+        "alt": "HTML"
+      },
+      {
+        "src": "/images/css_light.webp",
+        "dark": "/images/css_dark.webp",
+        "alt": "CSS"
+      },
+      {
+        "src": "/images/js.webp",
+        "alt": "JavaScript"
+      },
+      {
+        "src": "/images/node_light.webp",
+        "dark": "/images/node_dark.webp",
+        "alt": "Node.js"
+      },
+      {
+        "src": "/images/java.webp",
+        "alt": "Java"
+      },
+      {
+        "src": "/images/aspnet.webp",
+        "alt": "ASP.net"
+      },
+      {
+        "src": "/images/csharp.webp",
+        "alt": "C#"
+      },
+      {
+        "src": "/images/vba_light.webp",
+        "dark": "/images/vba_dark.webp",
+        "alt": "VBA"
+      }
+    ]
+  },
+  "resources": {
+    "pt": "Recursos AWS",
+    "en": "AWS Resources",
+    "es": "Recursos AWS",
+    "icon": "IoCloudOutline",
+    "columns": 3,
+    "rows": 2,
+    "content": [
+      {
+        "src": "/images/quicksight.webp",
+        "alt": "QuickSight"
+      },
+      {
+        "src": "/images/glue.webp",
+        "alt": "Glue"
+      },
+      {
+        "src": "/images/redshift.webp",
+        "alt": "Redshift"
+      },
+      {
+        "src": "/images/athena.webp",
+        "alt": "Athena"
+      },
+      {
+        "src": "/images/s3.webp",
+        "alt": "S3"
+      },
+      {
+        "src": "/images/stepfunctions.webp",
+        "alt": "StepFunctions"
+      }
+    ]
+  },
+  "tools": {
+    "pt": "Ferramentas & Frameworks",
+    "en": "Tools & Frameworks",
+    "es": "Herramientas y Frameworks",
+    "icon": "IoConstructOutline",
+    "columns": 3,
+    "rows": 3,
+    "content": [
+      {
+        "src": "/images/vscode.webp",
+        "alt": "VS Code"
+      },
+      {
+        "src": "/images/react_light.webp",
+        "dark": "/images/react_dark.webp",
+        "alt": "React.js"
+      },
+      {
+        "src": "/images/tailwind_light.webp",
+        "dark": "/images/tailwind_dark.webp",
+        "alt": "Tailwind CSS"
+      },
+      {
+        "src": "/images/git.webp",
+        "alt": "Git"
+      },
+      {
+        "src": "/images/github_light.webp",
+        "dark": "/images/github_dark.webp",
+        "alt": "GitHub"
+      },
+      {
+        "src": "/images/excel.webp",
+        "alt": "Excel"
+      },
+      {
+        "src": "/images/postman.webp",
+        "alt": "Postman"
+      },
+      {
+        "src": "/images/gimp_light.webp",
+        "dark": "/images/gimp_dark.webp",
+        "alt": "GIMP"
+      },
+      {
+        "src": "/images/visualstudio.webp",
+        "alt": "Visual Studio"
+      }
+    ]
+  },
+  "databases": {
+    "pt": "Bancos de Dados",
+    "en": "Databases",
+    "es": "Bases de Datos",
+    "icon": "IoServerOutline",
+    "columns": 2,
+    "rows": 2,
+    "content": [
+      {
+        "src": "/images/oracle_light.webp",
+        "dark": "/images/oracle_dark.webp",
+        "alt": "Oracle Database"
+      },
+      {
+        "src": "/images/mssql_light.webp",
+        "dark": "/images/mssql_dark.webp",
+        "alt": "SQL Server"
+      },
+      {
+        "src": "/images/postgre_light.webp",
+        "dark": "/images/postgre_dark.webp",
+        "alt": "PostgreSQL"
+      },
+      {
+        "src": "/images/mongodb_light.webp",
+        "dark": "/images/mongodb_dark.webp",
+        "alt": "MongoDB"
+      }
+    ]
+  },
+  "systems": {
+    "pt": "Sistemas Corporativos",
+    "en": "Enterprise Systems",
+    "es": "Sistemas Corporativos",
+    "icon": "IoDesktopOutline",
+    "columns": 2,
+    "rows": 2,
+    "content": [
+      {
+        "src": "/images/ebs_light.webp",
+        "dark": "/images/ebs_dark.webp",
+        "alt": "Oracle EBS"
+      },
+      {
+        "src": "/images/sap.webp",
+        "alt": "SAP R/3"
+      },
+      {
+        "src": "/images/tasy.webp",
+        "alt": "Tasy EMR"
+      },
+      {
+        "src": "/images/synchro.webp",
+        "alt": "Synchro"
+      }
+    ]
+  }
+}

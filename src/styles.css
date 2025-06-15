@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@media print {
+  header,
+  #photo,
+  #legend,
+  #carousel,
+  footer {
+    display: none !important;
+  }
+
+  main,
+  #skills,
+  #highlights {
+    padding-top: 0 !important;
+  }
+
+  h1 {
+    font-size: 40px !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  h2 {
+    margin-bottom: 28px !important;
+  }
+
+  h3 {
+    color: var(--color-teal-800) !important;
+  }
+
+  h2,
+  h4,
+  strong {
+    color: var(--color-teal-700) !important;
+  }
+
+  section {
+    padding-top: 32px !important;
+  }
+
+  #page {
+    background-color: transparent !important;
+  }
+
+  #head {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    border-radius: 8px !important;
+  }
+
+  #header {
+    max-width: 100% !important;
+  }
+
+  #site {
+    display: inline-flex !important;
+  }
+
+  #contact {
+    font-size: 16px !important;
+  }
+
+  #sections {
+    margin-top: 0 !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #highlight {
+    border-color: var(--color-teal-700) !important;
+    background-color: var(--color-emerald-200) !important;
+    color: var(--color-emerald-900) !important;
+  }
+
+  .panel {
+    border-color: var(--color-teal-700) !important;
+    background-color: var(--color-neutral-200) !important;
+  }
+
+  .dot {
+    background-color: var(--color-teal-700) !important;
+  }
+
+  .item {
+    background-color: var(--color-teal-200) !important;
+    color: var(--color-teal-900) !important;
+  }
+
+  .info {
+    color: var(--color-teal-950) !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 2cm;
+
+    @top-right {
+      content: "Marcelo Rispoli Leal";
+      font-size: 14px;
+      color: #000;
+    }
+
+    @bottom-right {
+      content: counter(page) "/" counter(pages);
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* custom breakpoints */
+  --breakpoint-3xs: 16rem;
+  --breakpoint-2xs: 24rem;
+  --breakpoint-xs: 32rem;
+  --breakpoint-xm: 56rem;
+  --breakpoint-3xl: 128rem;
+  --breakpoint-4xl: 160rem;
+}
+
+h2 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1;
+}

@@ -1,0 +1,79 @@
+import { IoIdCardOutline } from "react-icons/io5";
+
+// Sub-component for rendering each experience
+function Experience({ experience }) {
+  // Destructure with default values to prevent errors if fields are missing
+  const {
+    title = "N/A",
+    company = "N/A",
+    period = "N/A",
+    clients,
+    highlight,
+    activities = [],
+  } = experience;
+
+  return (
+    <div className="panel rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 dark:border-teal-300 dark:bg-neutral-700">
+      <div className="mb-4 flex flex-col justify-between sm:flex-row sm:items-start">
+        <>
+          <h3 className="font-bold text-teal-800 md:text-lg xl:text-xl dark:text-teal-200">
+            {title}
+          </h3>
+          <h4 className="md:text-md text-sm font-semibold text-teal-700 xl:text-lg dark:text-teal-300">
+            {company}
+          </h4>
+        </>
+        <span className="info xl:text-md mt-2 text-xs text-teal-950 sm:mt-0 md:text-sm dark:text-teal-50">
+          {period}
+        </span>
+      </div>
+
+      {clients && (
+        <div className="item xl:text-md mb-4 rounded-md bg-teal-200 p-3 text-xs text-teal-900 md:text-sm dark:bg-teal-800 dark:text-teal-100">
+          <strong className="text-teal-700 dark:text-teal-300">
+            {clients.label + ":"}
+          </strong>
+          <span>{` ${clients.content}`}</span>
+        </div>
+      )}
+
+      {highlight && (
+        <div
+          id="highlight"
+          className="xl:text-md mb-4 rounded-md border border-teal-700 bg-emerald-200 p-4 text-xs text-emerald-900 md:text-sm dark:border-teal-300 dark:bg-emerald-800 dark:text-emerald-100"
+        >
+          {highlight}
+        </div>
+      )}
+
+      {activities.length > 0 && (
+        <ul className="space-y-2">
+          {activities.map((activity, actIndex) => (
+            <li key={actIndex} className="flex items-start">
+              <span className="dot mt-1 mr-2 h-2 w-2 flex-shrink-0 rounded-full bg-teal-700 dark:bg-teal-300" />
+              <span className="info xl:text-md text-xs text-teal-950 md:text-sm dark:text-teal-50">
+                {activity}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+export default function Experiences({ title, content }) {
+  return (
+    <section className="pt-16">
+      <h2 className="mb-12 text-2xl text-teal-700 md:text-3xl xl:text-4xl dark:text-teal-300">
+        <IoIdCardOutline className="mr-1" />
+        {title}
+      </h2>
+      <div className="space-y-8">
+        {content.map((exp, index) => (
+          <Experience key={index} experience={exp} />
+        ))}
+      </div>
+    </section>
+  );
+}
