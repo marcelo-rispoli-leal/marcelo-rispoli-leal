@@ -8,7 +8,7 @@ import Certificates from "./Certificates";
 import Highlights from "./Highlights";
 import Footer from "./Footer";
 import useHeaderObserver from "../hooks/useHeaderObserver";
-import { useContext, useState, useRef } from "react";
+import { useContext } from "react";
 import { AppContext } from "../hooks/useAppContext";
 import { IoSync } from "react-icons/io5";
 import { Analytics } from "@vercel/analytics/react";
@@ -18,11 +18,8 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 const vercel = import.meta.env.VITE_VERCEL;
 
 export default function App() {
-  const h1Ref = useRef(null);
   const { sections } = useContext(AppContext);
-  const [isH1Visible, setIsH1Visible] = useState(true);
-
-  useHeaderObserver(h1Ref, setIsH1Visible, sections);
+  const { isH1Visible, h1Ref } = useHeaderObserver(sections);
 
   if (!sections) {
     return (

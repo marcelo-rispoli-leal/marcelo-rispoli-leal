@@ -15,14 +15,14 @@ function Experience({ experience }) {
   return (
     <div className="panel rounded-lg border-l-4 border-teal-700 bg-neutral-300 p-4 dark:border-teal-300 dark:bg-neutral-700">
       <div className="mb-4 flex flex-col justify-between sm:flex-row sm:items-start">
-        <>
+        <div>
           <h3 className="font-bold text-teal-800 md:text-lg xl:text-xl dark:text-teal-200">
             {title}
           </h3>
           <h4 className="md:text-md text-sm font-semibold text-teal-700 xl:text-lg dark:text-teal-300">
             {company}
           </h4>
-        </>
+        </div>
         <span className="info xl:text-md mt-2 text-xs text-teal-950 sm:mt-0 md:text-sm dark:text-teal-50">
           {period}
         </span>
