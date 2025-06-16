@@ -6,7 +6,7 @@
         "src": "./images/marcelo.webp",
         "alt": "MRL"
       },
-      "legend": "Especialista en Sistemas Fiscales e Integración de Datos Corporativos",
+      "legend": "Especialista en Soluciones Fiscales e Integración de Datos Corporativos",
       "person": {
         "birth": "1980-02-04",
         "text": "años, casado"
@@ -81,7 +81,7 @@
           "period": "Jun/2008 - Ago/2013 | Ene/2015 - Ene/2020",
           "clients": {
             "label": "Principales Clientes",
-            "content": "Tramontina, Lojas Benoit, Paquetá Calçados, TAP, Procergs, Bettanin, Dorf Ketal, Dana Albarus, Dell"
+            "content": "Tramontina, Lojas Benoit, Paquetá Calçados, TAP, Procergs, Bettanin, Dorf Ketal, Dana Albarus, Agrofel, Dell"
           },
           "activities": [
             "Implementación, mantenimiento y personalización de soluciones fiscales Synchro",
