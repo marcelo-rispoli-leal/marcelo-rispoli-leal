@@ -45,6 +45,20 @@
       "title": "Experiencia Profesional",
       "content": [
         {
+          "title": "Desarrollador de Sistemas",
+          "company": "Premiersoft Soluções em Tecnologia",
+          "period": "Sep/2025 - Presente",
+          "clients": {
+            "label": "Principal Cliente",
+            "content": "Cooperativa Ailos"
+          },
+          "activities": [
+            "Programación avanzada en Oracle PL/SQL",
+            "Análisis y depuración de datos",
+            "Pruebas y documentación del desarrollo"
+          ]
+        },
+        {
           "title": "Consultor Técnico-Funcional Synchro",
           "company": "Ninecon Consultores Associados",
           "period": "Feb/2022 - Mar/2025",
