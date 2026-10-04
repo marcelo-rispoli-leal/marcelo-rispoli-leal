@@ -1,7 +1,7 @@
 import {
   IoPerson,
   IoLocation,
-  IoCall,
+  IoLogoWhatsapp,
   IoMail,
   IoLogoLinkedin,
   IoLogoGithub,
@@ -69,7 +69,7 @@ export default function Header({ content, h1Ref }) {
             {city}
           </span>
           <span className="inline-flex">
-            <IoCall className="mr-1 rotate-18" />
+            <IoLogoWhatsapp className="mr-1 rotate-18" />
             {phone}
           </span>
           <a
