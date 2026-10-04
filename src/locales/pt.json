@@ -67,6 +67,7 @@
             "content": "Amazon, Dufry, Azul Linhas Aéreas, Exterran, FGV"
           },
           "highlight": "Participação técnica chave em projeto de recuperação de créditos fiscais sobre ativos, desenvolvendo workflows complexos para integração entre Synchro, Oracle EBS e ecossistema AWS (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "breakpage": 1,
           "activities": [
             "Construção de fluxos de integração entre Oracle EBS, Synchro e S3 utilizando Redshift e Athena",
             "Implementação de dashboards no QuickSight para monitoramento fiscal e contábil",

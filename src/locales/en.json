@@ -67,6 +67,7 @@
             "content": "Amazon, Dufry, Azul Airlines, Exterran, FGV"
           },
           "highlight": "Key technical participation in tax credit recovery project on assets, developing complex workflows for integration between Synchro, Oracle EBS and AWS ecosystem (Redshift, Athena, S3, Glue, QuickSight, StepFunctions).",
+          "breakpage": 1,
           "activities": [
             "Built integration flows between Oracle EBS, Synchro and S3 using Redshift and Athena",
             "Implemented QuickSight dashboards for tax and accounting monitoring",
