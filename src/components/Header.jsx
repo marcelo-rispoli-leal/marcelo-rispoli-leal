@@ -69,7 +69,7 @@ export default function Header({ content, h1Ref }) {
             {city}
           </span>
           <span className="inline-flex">
-            <IoLogoCall className="mr-1 rotate-18" />
+            <IoCall className="mr-1 rotate-18" />
             {phone}
           </span>
           <a
